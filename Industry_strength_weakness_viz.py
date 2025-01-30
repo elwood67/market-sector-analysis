@@ -263,6 +263,267 @@ class IndustryAnalyzer:
             'volatility_factor': round(volatility_factor, 2)
         }
 
+    def create_analysis_chart(self, metrics, mode='strength'):
+        """Create industry analysis visualization"""
+        score_key = f'{mode}_score'
+        sorted_industries = sorted(
+            metrics.items(),
+            key=lambda x: x[1][score_key],
+            reverse=True
+        )
+        
+        industries = []
+        scores = []
+        colors = []
+        hover_text = []
+        
+        color_scheme = self.sector_colors if mode == 'strength' else self.weakness_colors
+        
+        for industry, m in sorted_industries[:30]:  # Top 30 industries
+            industries.append(industry)
+            scores.append(m[score_key])
+            colors.append(color_scheme.get(m['sector'], '#999999'))
+            
+            hover_text.append(
+                f"Industry: {industry}<br>" +
+                f"Sector: {m['sector']}<br>" +
+                f"{mode.title()} Score: {m[score_key]}<br>" +
+                f"Raw Score: {m[f'raw_{mode}']}<br>" +
+                f"Volatility Impact: {m['volatility_factor']}<br>" +
+                f"Active Stocks: {m['active_stocks']}<br>" +
+                f"Recent Trend: {m['recent_trend']}<br>" +
+                f"Momentum: {m['momentum']:.2f}<br>" +
+                f"Momentum Change: {m['momentum_change']:.2f}"
+            )
+        
+        fig = go.Figure()
+        
+        fig.add_trace(go.Bar(
+            x=scores,
+            y=industries,
+            orientation='h',
+            marker_color=colors,
+            text=[f"{score:.1f}" for score in scores],
+            textposition='outside',
+            hovertext=hover_text,
+            hoverinfo='text'
+        ))
+        
+        title = 'Industry Strength Analysis' if mode == 'strength' else 'Industry Weakness Analysis'
+        fig.update_layout(
+            title=title,
+            xaxis_title=f'{mode.title()} Score',
+            yaxis_title='Industry',
+            template='plotly_dark',
+            height=800,
+            margin=dict(l=200, r=100)
+        )
+        
+        return fig
+
+    def create_momentum_chart(self, metrics, mode='strength'):
+        """Create momentum analysis chart"""
+        momentum_data = []
+        
+        score_key = f'{mode}_score'
+        for industry, m in metrics.items():
+            momentum_data.append({
+                'industry': industry,
+                'sector': m['sector'],
+                'momentum': m['momentum'],
+                'momentum_change': m['momentum_change'],
+                'score': m[score_key],
+                'volume': m['volume_trend']
+            })
+        
+        # Sort by momentum and score
+        momentum_data.sort(key=lambda x: (x['momentum'], x['score']), reverse=True)
+        momentum_data = momentum_data[:20]  # Top 20
+        
+        fig = go.Figure()
+        
+        # Add momentum bars
+        fig.add_trace(go.Bar(
+            name='Current Momentum',
+            x=[d['industry'] for d in momentum_data],
+            y=[d['momentum'] for d in momentum_data],
+            marker_color=[self.sector_colors.get(d['sector'], '#999999') for d in momentum_data],
+            hovertemplate=(
+                "<b>%{x}</b><br>" +
+                "Momentum: %{y:.2f}<br>" +
+                "<extra></extra>"
+            )
+        ))
+        
+        # Add momentum change line
+        fig.add_trace(go.Scatter(
+            name='Momentum Change',
+            x=[d['industry'] for d in momentum_data],
+            y=[d['momentum_change'] for d in momentum_data],
+            mode='lines+markers',
+            line=dict(color='white', width=2),
+            marker=dict(size=6),
+            hovertemplate=(
+                "<b>%{x}</b><br>" +
+                "Momentum Change: %{y:.2f}<br>" +
+                "<extra></extra>"
+            )
+        ))
+        
+        fig.update_layout(
+            title=f'Industry Momentum Analysis ({mode.title()})',
+            xaxis_title='Industry',
+            yaxis_title='Momentum Score',
+            template='plotly_dark',
+            height=600,
+            xaxis={'tickangle': -45},
+            showlegend=True,
+            barmode='relative',
+            hovermode='x unified'
+        )
+        
+        return fig
+
+    def create_score_comparison(self, metrics):
+        """Create scatter plot comparing strength vs weakness"""
+        industries = list(metrics.keys())
+        strength_scores = [m['strength_score'] for m in metrics.values()]
+        weakness_scores = [m['weakness_score'] for m in metrics.values()]
+        sectors = [m['sector'] for m in metrics.values()]
+        
+        fig = go.Figure()
+        
+        # Sort sectors by number of industries for legend ordering
+        sector_counts = pd.Series(sectors).value_counts()
+        sorted_sectors = sector_counts.index.tolist()
+        
+        for sector in sorted_sectors:
+            mask = [s == sector for s in sectors]
+            fig.add_trace(go.Scatter(
+                x=[s for s, m in zip(strength_scores, mask) if m],
+                y=[w for w, m in zip(weakness_scores, mask) if m],
+                mode='markers',
+                name=sector,
+                marker=dict(
+                    color=self.sector_colors.get(sector, '#999999'),
+                    size=12,
+                    symbol='circle',
+                    line=dict(width=1, color='white')
+                ),
+                hovertemplate=(
+                    "<b>%{text}</b><br>" +
+                    "Sector: " + sector + "<br>" +
+                    "Strength Score: %{x:.1f}<br>" +
+                    "Weakness Score: %{y:.1f}<br>" +
+                    "<extra></extra>"
+                ),
+                text=[i for i, m in zip(industries, mask) if m]
+            ))
+        
+        fig.update_layout(
+            title='Industry Strength vs Weakness Matrix',
+            xaxis_title='Strength Score',
+            yaxis_title='Weakness Score',
+            template='plotly_dark',
+            height=800,
+            showlegend=True,
+            hovermode='closest',
+            xaxis=dict(range=[0, 100]),
+            yaxis=dict(range=[0, 100]),
+            legend=dict(
+                yanchor="top",
+                y=0.99,
+                xanchor="left",
+                x=1.02,
+                bgcolor="rgba(0,0,0,0.1)",
+                bordercolor="white",
+                borderwidth=1
+            ),
+            shapes=[dict(
+                type="line",
+                x0=0, y0=0,
+                x1=100, y1=100,
+                line=dict(
+                    color="rgba(255, 255, 255, 0.2)",
+                    width=1,
+                    dash="dash"
+                )
+            )]
+        )
+        
+        return fig
+
+    def create_volatility_chart(self, metrics):
+        """Create volatility analysis chart"""
+        volatility_data = [
+            {
+                'industry': industry,
+                'sector': m['sector'],
+                'volatility': m['volatility'],
+                'strength_score': m['strength_score'],
+                'weakness_score': m['weakness_score'],
+                'momentum': m['momentum']
+            }
+            for industry, m in metrics.items()
+        ]
+        
+        # Sort by volatility
+        volatility_data.sort(key=lambda x: x['volatility'], reverse=True)
+        volatility_data = volatility_data[:20]  # Top 20 most volatile
+        
+        fig = go.Figure()
+        
+        # Add volatility bars
+        fig.add_trace(go.Bar(
+            name='Volatility',
+            x=[d['industry'] for d in volatility_data],
+            y=[d['volatility'] for d in volatility_data],
+            marker_color=[self.sector_colors.get(d['sector'], '#999999') for d in volatility_data],
+            text=[f"{v:.2f}" for v in [d['volatility'] for d in volatility_data]],
+            textposition='outside',
+            hovertemplate=(
+                "<b>%{x}</b><br>" +
+                "Volatility: %{y:.2f}<br>" +
+                "<extra></extra>"
+            )
+        ))
+        
+        # Add strength/weakness/momentum markers
+        max_vol = max(d['volatility'] for d in volatility_data)
+        
+        fig.add_trace(go.Scatter(
+            name='Strength Score',
+            x=[d['industry'] for d in volatility_data],
+            y=[d['strength_score']/100 * max_vol for d in volatility_data],
+            mode='markers',
+            marker=dict(color='green', size=10, symbol='diamond'),
+            hovertemplate="Strength Score: %{text:.1f}<br><extra></extra>",
+            text=[d['strength_score'] for d in volatility_data]
+        ))
+        
+        fig.add_trace(go.Scatter(
+            name='Weakness Score',
+            x=[d['industry'] for d in volatility_data],
+            y=[d['weakness_score']/100 * max_vol for d in volatility_data],
+            mode='markers',
+            marker=dict(color='red', size=10, symbol='diamond'),
+            hovertemplate="Weakness Score: %{text:.1f}<br><extra></extra>",
+            text=[d['weakness_score'] for d in volatility_data]
+        ))
+        
+        fig.update_layout(
+            title='Industry Volatility Analysis',
+            xaxis_title='Industry',
+            yaxis_title='Volatility Score',
+            template='plotly_dark',
+            height=600,
+            xaxis={'tickangle': -45},
+            showlegend=True,
+            barmode='overlay'
+        )
+        
+        return fig
+
 def main():
     st.set_page_config(page_title="Industry Analysis", layout="wide")
     
