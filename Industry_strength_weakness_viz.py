@@ -7,11 +7,41 @@ import plotly.express as px
 from datetime import datetime, timedelta
 import numpy as np
 from collections import defaultdict
+import os
+
+def check_password():
+    """Returns `True` if the user had the correct password."""
+
+    def password_entered():
+        """Checks whether a password entered by the user is correct."""
+        if st.session_state["password"] == st.secrets["password"]:
+            st.session_state["password_correct"] = True
+            del st.session_state["password"]  # don't store password
+        else:
+            st.session_state["password_correct"] = False
+
+    if "password_correct" not in st.session_state:
+        # First run, show input for password.
+        st.text_input(
+            "Password", type="password", on_change=password_entered, key="password"
+        )
+        return False
+    elif not st.session_state["password_correct"]:
+        # Password not correct, show input + error.
+        st.text_input(
+            "Password", type="password", on_change=password_entered, key="password"
+        )
+        st.error("😕 Password incorrect")
+        return False
+    else:
+        # Password correct.
+        return True
 
 class IndustryAnalyzer:
-    def __init__(self, base_dir: str):
-        self.base_dir = Path(base_dir)
-        self.data_sets_dir = self.base_dir / 'data_sets'
+    def __init__(self):
+        # Get the directory containing the script
+        self.base_dir = Path(os.path.dirname(os.path.abspath(__file__)))
+        self.data_sets_dir = self.base_dir / 'data' / 'datasets'
         
         # Color schemes
         self.sector_colors = {
@@ -46,6 +76,10 @@ class IndustryAnalyzer:
         # Get all JSON files and sort them properly
         json_files = sorted(list(self.data_sets_dir.glob('comparison_date_*.json')))
         
+        if not json_files:
+            st.error(f"No data files found in {self.data_sets_dir}")
+            return {}, [], {}
+        
         # Initialize tracking dictionaries
         active_stocks = defaultdict(set)
         industry_history = defaultdict(lambda: {
@@ -61,8 +95,12 @@ class IndustryAnalyzer:
         })
         
         for json_file in json_files:
-            with open(json_file, 'r') as f:
-                data = json.load(f)
+            try:
+                with open(json_file, 'r') as f:
+                    data = json.load(f)
+            except Exception as e:
+                st.error(f"Error reading file {json_file}: {e}")
+                continue
             
             # Process date
             parts = json_file.stem.split('_')
@@ -103,7 +141,7 @@ class IndustryAnalyzer:
                         daily_changes[industry]['removed'] += 1
                     
                     daily_changes[industry]['sector'] = sector
-            
+
             # Update industry statistics
             for industry in industry_history.keys():
                 active_count = len(active_stocks[industry])
@@ -180,7 +218,7 @@ class IndustryAnalyzer:
         volume_history = history['volume_history']
         recent_volume = sum(volume_history[-5:]) / 5 if volume_history else 0
         
-        # Volatility factor (now reduces both scores)
+        # Volatility factor (reduces both scores)
         volatility_factor = max(0, 1 - (volatility * 0.15))
         
         # Strength Score Components
@@ -225,358 +263,87 @@ class IndustryAnalyzer:
             'volatility_factor': round(volatility_factor, 2)
         }
 
-    def create_analysis_chart(self, metrics, mode='strength'):
-        """Create industry analysis visualization"""
-        score_key = f'{mode}_score'
-        sorted_industries = sorted(
-            metrics.items(),
-            key=lambda x: x[1][score_key],
-            reverse=True
-        )
-        
-        industries = []
-        scores = []
-        colors = []
-        hover_text = []
-        
-        color_scheme = self.sector_colors if mode == 'strength' else self.weakness_colors
-        
-        for industry, m in sorted_industries[:30]:  # Top 30 industries
-            industries.append(industry)
-            scores.append(m[score_key])
-            colors.append(color_scheme.get(m['sector'], '#999999'))
-            
-            hover_text.append(
-                f"Industry: {industry}<br>" +
-                f"Sector: {m['sector']}<br>" +
-                f"{mode.title()} Score: {m[score_key]}<br>" +
-                f"Raw Score: {m[f'raw_{mode}']}<br>" +
-                f"Volatility Impact: {m['volatility_factor']}<br>" +
-                f"Active Stocks: {m['active_stocks']}<br>" +
-                f"Recent Trend: {m['recent_trend']}<br>" +
-                f"Momentum: {m['momentum']:.2f}<br>" +
-                f"Momentum Change: {m['momentum_change']:.2f}"
-            )
-        
-        fig = go.Figure()
-        
-        fig.add_trace(go.Bar(
-            x=scores,
-            y=industries,
-            orientation='h',
-            marker_color=colors,
-            text=[f"{score:.1f}" for score in scores],
-            textposition='outside',
-            hovertext=hover_text,
-            hoverinfo='text'
-        ))
-        
-        title = 'Industry Strength Analysis' if mode == 'strength' else 'Industry Weakness Analysis'
-        fig.update_layout(
-            title=title,
-            xaxis_title=f'{mode.title()} Score',
-            yaxis_title='Industry',
-            template='plotly_dark',
-            height=800,
-            margin=dict(l=200, r=100)
-        )
-        
-        return fig
-
-    def create_momentum_chart(self, metrics, mode='strength'):
-        """Create momentum analysis chart"""
-        momentum_data = []
-        
-        score_key = f'{mode}_score'
-        for industry, m in metrics.items():
-            momentum_data.append({
-                'industry': industry,
-                'sector': m['sector'],
-                'momentum': m['momentum'],
-                'momentum_change': m['momentum_change'],
-                'score': m[score_key],
-                'volume': m['volume_trend']
-            })
-        
-        # Sort by momentum and score
-        momentum_data.sort(key=lambda x: (x['momentum'], x['score']), reverse=True)
-        momentum_data = momentum_data[:20]  # Top 20
-        
-        fig = go.Figure()
-        
-        # Add momentum bars
-        fig.add_trace(go.Bar(
-            name='Current Momentum',
-            x=[d['industry'] for d in momentum_data],
-            y=[d['momentum'] for d in momentum_data],
-            marker_color=[self.sector_colors.get(d['sector'], '#999999') for d in momentum_data],
-            hovertemplate=(
-                "<b>%{x}</b><br>" +
-                "Momentum: %{y:.2f}<br>" +
-                "<extra></extra>"
-            )
-        ))
-        
-        # Add momentum change line
-        fig.add_trace(go.Scatter(
-            name='Momentum Change',
-            x=[d['industry'] for d in momentum_data],
-            y=[d['momentum_change'] for d in momentum_data],
-            mode='lines+markers',
-            line=dict(color='white', width=2),
-            marker=dict(size=6),
-            hovertemplate=(
-                "<b>%{x}</b><br>" +
-                "Momentum Change: %{y:.2f}<br>" +
-                "<extra></extra>"
-            )
-        ))
-        
-        fig.update_layout(
-            title=f'Industry Momentum Analysis ({mode.title()})',
-            xaxis_title='Industry',
-            yaxis_title='Momentum Score',
-            template='plotly_dark',
-            height=600,
-            xaxis={'tickangle': -45},
-            showlegend=True,
-            barmode='relative',
-            hovermode='x unified'
-        )
-        
-        return fig
-
-    def create_score_comparison(self, metrics):
-        """Create scatter plot comparing strength vs weakness"""
-        industries = list(metrics.keys())
-        strength_scores = [m['strength_score'] for m in metrics.values()]
-        weakness_scores = [m['weakness_score'] for m in metrics.values()]
-        sectors = [m['sector'] for m in metrics.values()]
-        
-        fig = go.Figure()
-        
-        # Sort sectors by number of industries for legend ordering
-        sector_counts = pd.Series(sectors).value_counts()
-        sorted_sectors = sector_counts.index.tolist()
-        
-        for sector in sorted_sectors:
-            mask = [s == sector for s in sectors]
-            fig.add_trace(go.Scatter(
-                x=[s for s, m in zip(strength_scores, mask) if m],
-                y=[w for w, m in zip(weakness_scores, mask) if m],
-                mode='markers',  # Removed text mode
-                name=sector,
-                marker=dict(
-                    color=self.sector_colors.get(sector, '#999999'),
-                    size=12,
-                    symbol='circle',
-                    line=dict(width=1, color='white')  # Add white border for better visibility
-                ),
-                hovertemplate=(
-                    "<b>%{text}</b><br>" +
-                    "Sector: " + sector + "<br>" +
-                    "Strength Score: %{x:.1f}<br>" +
-                    "Weakness Score: %{y:.1f}<br>" +
-                    "<extra></extra>"
-                ),
-                text=[i for i, m in zip(industries, mask) if m]  # Keep industry names for hover
-            ))
-        
-        fig.update_layout(
-            title='Industry Strength vs Weakness Matrix',
-            xaxis_title='Strength Score',
-            yaxis_title='Weakness Score',
-            template='plotly_dark',
-            height=800,
-            showlegend=True,
-            hovermode='closest',
-            xaxis=dict(range=[0, 100]),
-            yaxis=dict(range=[0, 100]),
-            # Enhanced legend styling
-            legend=dict(
-                yanchor="top",
-                y=0.99,
-                xanchor="left",
-                x=1.02,
-                bgcolor="rgba(0,0,0,0.1)",
-                bordercolor="white",
-                borderwidth=1
-            ),
-            # Add quadrant labels
-            annotations=[
-                dict(
-                    x=75, y=25,
-                    xref="x", yref="y",
-                    text="Strong Bullish",
-                    showarrow=False,
-                    font=dict(color="#00FF00", size=14)
-                ),
-                dict(
-                    x=25, y=75,
-                    xref="x", yref="y",
-                    text="Strong Bearish",
-                    showarrow=False,
-                    font=dict(color="#FF0000", size=14)
-                )
-            ]
-        )
-        
-        # Add diagonal reference line
-        fig.add_shape(
-            type="line",
-            x0=0, y0=0,
-            x1=100, y1=100,
-            line=dict(
-                color="rgba(255, 255, 255, 0.2)",
-                width=1,
-                dash="dash"
-            )
-        )
-        
-        return fig
-
-    def create_volatility_chart(self, metrics):
-        """Create volatility analysis chart"""
-        volatility_data = [
-            {
-                'industry': industry,
-                'sector': m['sector'],
-                'volatility': m['volatility'],
-                'strength_score': m['strength_score'],
-                'weakness_score': m['weakness_score'],
-                'momentum': m['momentum']
-            }
-            for industry, m in metrics.items()
-        ]
-        
-        # Sort by volatility
-        volatility_data.sort(key=lambda x: x['volatility'], reverse=True)
-        volatility_data = volatility_data[:20]  # Top 20 most volatile
-        
-        fig = go.Figure()
-        
-        # Add volatility bars
-        fig.add_trace(go.Bar(
-            name='Volatility',
-            x=[d['industry'] for d in volatility_data],
-            y=[d['volatility'] for d in volatility_data],
-            marker_color=[self.sector_colors.get(d['sector'], '#999999') for d in volatility_data],
-            text=[f"{v:.2f}" for v in [d['volatility'] for d in volatility_data]],
-            textposition='outside',
-            hovertemplate=(
-                "<b>%{x}</b><br>" +
-                "Volatility: %{y:.2f}<br>" +
-                "<extra></extra>"
-            )
-        ))
-        
-        # Add strength/weakness/momentum markers
-        max_vol = max(d['volatility'] for d in volatility_data)
-        
-        fig.add_trace(go.Scatter(
-            name='Strength Score',
-            x=[d['industry'] for d in volatility_data],
-            y=[d['strength_score']/100 * max_vol for d in volatility_data],
-            mode='markers',
-            marker=dict(color='green', size=10, symbol='diamond'),
-            hovertemplate="Strength Score: %{text:.1f}<br><extra></extra>",
-            text=[d['strength_score'] for d in volatility_data]
-        ))
-        
-        fig.add_trace(go.Scatter(
-            name='Weakness Score',
-            x=[d['industry'] for d in volatility_data],
-            y=[d['weakness_score']/100 * max_vol for d in volatility_data],
-            mode='markers',
-            marker=dict(color='red', size=10, symbol='diamond'),
-            hovertemplate="Weakness Score: %{text:.1f}<br><extra></extra>",
-            text=[d['weakness_score'] for d in volatility_data]
-        ))
-        
-        fig.update_layout(
-            title='Industry Volatility Analysis',
-            xaxis_title='Industry',
-            yaxis_title='Volatility Score',
-            template='plotly_dark',
-            height=600,
-            xaxis={'tickangle': -45},
-            showlegend=True,
-            barmode='overlay'
-        )
-        
-        return fig
-
 def main():
     st.set_page_config(page_title="Industry Analysis", layout="wide")
     
-    base_dir = r"C:\Users\davet\OneDrive\kots1\Documents\trading_scripts\sector_analysis\market_rotation"
-    analyzer = IndustryAnalyzer(base_dir)
+    if not check_password():
+        st.stop()
     
-    # Load and analyze data
-    metrics, daily_data, industry_history = analyzer.load_industry_data()
+    analyzer = IndustryAnalyzer()
     
-    # Create tabs for different views
-    tabs = st.tabs(["Strong Industries", "Weak Industries", "Momentum Analysis", "Comparison"])
-    
-    with tabs[0]:
-        st.markdown("""
-        ### Strength Score Components:
-        - 30% Addition Ratio (Added vs Total volume)
-        - 30% Current Strength (Active vs Historical max)
-        - 40% Recent Trend (Positive changes in last 7 days)
-        - Both Strength and Weakness scores are reduced by volatility
-        """)
-        st.plotly_chart(analyzer.create_analysis_chart(metrics, 'strength'), use_container_width=True)
-        st.plotly_chart(analyzer.create_momentum_chart(metrics, 'strength'), use_container_width=True)
-    
-    with tabs[1]:
-        st.markdown("""
-        ### Weakness Score Components:
-        - 30% Removal Ratio (Removed vs Total volume)
-        - 30% Current Weakness (Below historical max)
-        - 40% Recent Trend (Negative changes in last 7 days)
-        - Both Strength and Weakness scores are reduced by volatility
-        """)
-        st.plotly_chart(analyzer.create_analysis_chart(metrics, 'weakness'), use_container_width=True)
-        st.plotly_chart(analyzer.create_momentum_chart(metrics, 'weakness'), use_container_width=True)
-    
-    with tabs[2]:
-        st.markdown("""
-        ### Momentum Analysis
-        - Bar height shows current momentum
-        - Line shows momentum change (acceleration)
-        - Colors indicate sectors
-        - Higher values indicate stronger trends
-        """)
-        col1, col2 = st.columns(2)
-        with col1:
-            st.plotly_chart(analyzer.create_volatility_chart(metrics), use_container_width=True)
+    try:
+        # Load and analyze data
+        metrics, daily_data, industry_history = analyzer.load_industry_data()
         
-        # Detailed metrics table
-        with col2:
-            # Convert metrics to DataFrame for easy filtering
-            df = pd.DataFrame([
-                {
-                    'Industry': industry,
-                    'Sector': m['sector'],
-                    'Active Stocks': m['active_stocks'],
-                    'Strength': m['strength_score'],
-                    'Weakness': m['weakness_score'],
-                    'Momentum': m['momentum'],
-                    'Volatility': m['volatility']
-                }
-                for industry, m in metrics.items()
-            ])
-            st.dataframe(df.sort_values('Momentum', ascending=False))
+        if not metrics:
+            st.error("No data loaded. Please check your data directory.")
+            st.stop()
+        
+        # Create tabs for different views
+        tabs = st.tabs(["Strong Industries", "Weak Industries", "Momentum Analysis", "Comparison"])
+        
+        with tabs[0]:
+            st.markdown("""
+            ### Strength Score Components:
+            - 30% Addition Ratio (Added vs Total volume)
+            - 30% Current Strength (Active vs Historical max)
+            - 40% Recent Trend (Positive changes in last 7 days)
+            - Both Strength and Weakness scores are reduced by volatility
+            """)
+            st.plotly_chart(analyzer.create_analysis_chart(metrics, 'strength'), use_container_width=True)
+            st.plotly_chart(analyzer.create_momentum_chart(metrics, 'strength'), use_container_width=True)
+        
+        with tabs[1]:
+            st.markdown("""
+            ### Weakness Score Components:
+            - 30% Removal Ratio (Removed vs Total volume)
+            - 30% Current Weakness (Below historical max)
+            - 40% Recent Trend (Negative changes in last 7 days)
+            - Both Strength and Weakness scores are reduced by volatility
+            """)
+            st.plotly_chart(analyzer.create_analysis_chart(metrics, 'weakness'), use_container_width=True)
+            st.plotly_chart(analyzer.create_momentum_chart(metrics, 'weakness'), use_container_width=True)
+        
+        with tabs[2]:
+            st.markdown("""
+            ### Momentum Analysis
+            - Bar height shows current momentum
+            - Line shows momentum change (acceleration)
+            - Colors indicate sectors
+            - Higher values indicate stronger trends
+            """)
+            col1, col2 = st.columns(2)
+            with col1:
+                st.plotly_chart(analyzer.create_volatility_chart(metrics), use_container_width=True)
+            
+            # Detailed metrics table
+            with col2:
+                df = pd.DataFrame([
+                    {
+                        'Industry': industry,
+                        'Sector': m['sector'],
+                        'Active Stocks': m['active_stocks'],
+                        'Strength': m['strength_score'],
+                        'Weakness': m['weakness_score'],
+                        'Momentum': m['momentum'],
+                        'Volatility': m['volatility']
+                    }
+                    for industry, m in metrics.items()
+                ])
+                st.dataframe(df.sort_values('Momentum', ascending=False))
+        
+        with tabs[3]:
+            st.markdown("""
+            ### Strength vs Weakness Matrix
+            - Higher strength and lower weakness scores indicate bullish trends
+            - Higher weakness and lower strength scores indicate bearish trends
+            - Color indicates sector
+            """)
+            st.plotly_chart(analyzer.create_score_comparison(metrics), use_container_width=True)
     
-    with tabs[3]:
-        st.markdown("""
-        ### Strength vs Weakness Matrix
-        - Higher strength and lower weakness scores indicate bullish trends
-        - Higher weakness and lower strength scores indicate bearish trends
-        - Color indicates sector
-        """)
-        st.plotly_chart(analyzer.create_score_comparison(metrics), use_container_width=True)
+    except Exception as e:
+        st.error(f"An error occurred: {str(e)}")
+        st.exception(e)
 
 if __name__ == "__main__":
     main()
