@@ -1,0 +1,3656 @@
+{
+  "metadata": {
+    "old_list": "list_49_date_12_18_24.txt",
+    "new_list": "list_50_date_12_19_24.txt"
+  },
+  "changes": [
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NNOX",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GRPN",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SPSC",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VYX",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "K",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MSTR",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NNBR",
+      "sector": "Industrials",
+      "industry": "Conglomerates",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "COST",
+      "sector": "Consumer Defensive",
+      "industry": "Discount Stores",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CIFR",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NVTS",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TRAK",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DEC",
+      "sector": "Energy",
+      "industry": "Oil & Gas E&P",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AEIS",
+      "sector": "Industrials",
+      "industry": "Electrical Equipment & Parts",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "HIMS",
+      "sector": "Consumer Defensive",
+      "industry": "Household & Personal Products",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ACAD",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FDP",
+      "sector": "Consumer Defensive",
+      "industry": "Farm Products",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "JKHY",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GH",
+      "sector": "Healthcare",
+      "industry": "Diagnostics & Research",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TGTX",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LIND",
+      "sector": "Consumer Cyclical",
+      "industry": "Travel Services",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BALY",
+      "sector": "Consumer Cyclical",
+      "industry": "Resorts & Casinos",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CRNC",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DIOD",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CDNS",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TCMD",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TDUP",
+      "sector": "Consumer Cyclical",
+      "industry": "Internet Retail",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RIOT",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "KLIC",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WINA",
+      "sector": "Consumer Cyclical",
+      "industry": "Specialty Retail",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NXDT",
+      "sector": "Real Estate",
+      "industry": "REIT - Diversified",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MOV",
+      "sector": "Consumer Cyclical",
+      "industry": "Luxury Goods",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ALXO",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BLDE",
+      "sector": "Industrials",
+      "industry": "Airports & Air Services",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BARK",
+      "sector": "Consumer Cyclical",
+      "industry": "Specialty Retail",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PENG",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AOSL",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MU",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PX",
+      "sector": "Financial Services",
+      "industry": "Asset Management",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BLBD",
+      "sector": "Industrials",
+      "industry": "Farm & Heavy Construction Machinery",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ACIC",
+      "sector": "Financial Services",
+      "industry": "Insurance - Property & Casualty",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MKC",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "KNF",
+      "sector": "Basic Materials",
+      "industry": "Building Materials",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FISI",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SITM",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FA",
+      "sector": "Industrials",
+      "industry": "Specialty Business Services",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WSR",
+      "sector": "Real Estate",
+      "industry": "REIT - Retail",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NVEC",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "JNPR",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SLDP",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto Parts",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ULTA",
+      "sector": "Consumer Cyclical",
+      "industry": "Specialty Retail",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MGNI",
+      "sector": "Communication Services",
+      "industry": "Advertising Agencies",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GHM",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RELL",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SANM",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CBNK",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LMND",
+      "sector": "Financial Services",
+      "industry": "Insurance - Property & Casualty",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "HRTX",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FPI",
+      "sector": "Real Estate",
+      "industry": "REIT - Specialty",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BMY",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ROK",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "UPST",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "HUT",
+      "sector": "Financial Services",
+      "industry": "Capital Markets",
+      "status": "removed"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TGNA",
+      "sector": "Communication Services",
+      "industry": "Broadcasting",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NNE",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ANF",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Retail",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MVIS",
+      "sector": "Technology",
+      "industry": "Scientific & Technical Instruments",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SWKH",
+      "sector": "Financial Services",
+      "industry": "Asset Management",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "HG",
+      "sector": "Financial Services",
+      "industry": "Insurance - Reinsurance",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ALKT",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MA",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SOC",
+      "sector": "Energy",
+      "industry": "Oil & Gas Drilling",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MITT",
+      "sector": "Real Estate",
+      "industry": "REIT - Mortgage",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "STKL",
+      "sector": "Consumer Defensive",
+      "industry": "Beverages - Non-Alcoholic",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CTSH",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VIAV",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ACN",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LINC",
+      "sector": "Consumer Defensive",
+      "industry": "Education & Training Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EXPE",
+      "sector": "Consumer Cyclical",
+      "industry": "Travel Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SHAK",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TG",
+      "sector": "Industrials",
+      "industry": "Metal Fabrication",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ARIS",
+      "sector": "Utilities",
+      "industry": "Utilities - Regulated Water",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ZYXI",
+      "sector": "Healthcare",
+      "industry": "Medical Distribution",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GATX",
+      "sector": "Industrials",
+      "industry": "Rental & Leasing Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PYPL",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FNKO",
+      "sector": "Consumer Cyclical",
+      "industry": "Leisure",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VALU",
+      "sector": "Financial Services",
+      "industry": "Financial Data & Stock Exchanges",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CAKE",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SYF",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VSTM",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SPTN",
+      "sector": "Consumer Defensive",
+      "industry": "Food Distribution",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GEV",
+      "sector": "Utilities",
+      "industry": "Utilities - Renewable",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "IBEX",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "IRWD",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - Specialty & Generic",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "XERS",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OOMA",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SAMG",
+      "sector": "Financial Services",
+      "industry": "Asset Management",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AKYA",
+      "sector": "Healthcare",
+      "industry": "Medical Instruments & Supplies",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FDS",
+      "sector": "Financial Services",
+      "industry": "Financial Data & Stock Exchanges",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TEAM",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CDZI",
+      "sector": "Utilities",
+      "industry": "Utilities - Regulated Water",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "HLIT",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "KMX",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto & Truck Dealerships",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DGII",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PLUG",
+      "sector": "Industrials",
+      "industry": "Electrical Equipment & Parts",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ATGE",
+      "sector": "Consumer Defensive",
+      "industry": "Education & Training Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SEPN",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "INOD",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OMER",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AXP",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ORC",
+      "sector": "Real Estate",
+      "industry": "REIT - Mortgage",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "IMAX",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BLFS",
+      "sector": "Healthcare",
+      "industry": "Medical Instruments & Supplies",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "IMMR",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ETR",
+      "sector": "Utilities",
+      "industry": "Utilities - Regulated Electric",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BLUE",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MD",
+      "sector": "Healthcare",
+      "industry": "Medical Care Facilities",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ALE",
+      "sector": "Utilities",
+      "industry": "Utilities - Diversified",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NGVC",
+      "sector": "Consumer Defensive",
+      "industry": "Grocery Stores",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "JANX",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MRCY",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "IRMD",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EXLS",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PRAX",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "IBM",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DRI",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PRTA",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OPK",
+      "sector": "Healthcare",
+      "industry": "Diagnostics & Research",
+      "status": "added"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "IRTC",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AGYS",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SEI",
+      "sector": "Energy",
+      "industry": "Oil & Gas Equipment & Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GLNG",
+      "sector": "Energy",
+      "industry": "Oil & Gas Midstream",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DECK",
+      "sector": "Consumer Cyclical",
+      "industry": "Footwear & Accessories",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MIR",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WMT",
+      "sector": "Consumer Defensive",
+      "industry": "Discount Stores",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "COMM",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BH",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "UNFI",
+      "sector": "Consumer Defensive",
+      "industry": "Food Distribution",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "META",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ALGT",
+      "sector": "Industrials",
+      "industry": "Airlines",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BE",
+      "sector": "Industrials",
+      "industry": "Electrical Equipment & Parts",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WDAY",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NATL",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SRRK",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LC",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MAPS",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MTTR",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RDZN",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LUV",
+      "sector": "Industrials",
+      "industry": "Airlines",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ESQ",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ANGO",
+      "sector": "Healthcare",
+      "industry": "Medical Instruments & Supplies",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WRBY",
+      "sector": "Healthcare",
+      "industry": "Medical Instruments & Supplies",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PL",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AXON",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ADPT",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CSV",
+      "sector": "Consumer Cyclical",
+      "industry": "Personal Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CBL",
+      "sector": "Real Estate",
+      "industry": "REIT - Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "UPWK",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TPB",
+      "sector": "Consumer Defensive",
+      "industry": "Tobacco",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CRDF",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WK",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BFH",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DAN",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto Parts",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WBD",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TBI",
+      "sector": "Industrials",
+      "industry": "Staffing & Employment Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "COUR",
+      "sector": "Consumer Defensive",
+      "industry": "Education & Training Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VEL",
+      "sector": "Financial Services",
+      "industry": "Mortgage Finance",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CPSS",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WBA",
+      "sector": "Healthcare",
+      "industry": "Pharmaceutical Retailers",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PTCT",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SERA",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "UFCS",
+      "sector": "Financial Services",
+      "industry": "Insurance - Property & Casualty",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AVGO",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SMPL",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CEVA",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MYPS",
+      "sector": "Communication Services",
+      "industry": "Electronic Gaming & Multimedia",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ALG",
+      "sector": "Industrials",
+      "industry": "Farm & Heavy Construction Machinery",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DDD",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "KN",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SMID",
+      "sector": "Basic Materials",
+      "industry": "Building Materials",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DAVE",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "KR",
+      "sector": "Consumer Defensive",
+      "industry": "Grocery Stores",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ADTN",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "REAL",
+      "sector": "Consumer Cyclical",
+      "industry": "Luxury Goods",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LUNR",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "XFOR",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CHEF",
+      "sector": "Consumer Defensive",
+      "industry": "Food Distribution",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PEBK",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VRNT",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PRIM",
+      "sector": "Industrials",
+      "industry": "Engineering & Construction",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ENFN",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LQDT",
+      "sector": "Consumer Cyclical",
+      "industry": "Internet Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BELFB",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CTV",
+      "sector": "Communication Services",
+      "industry": "Advertising Agencies",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TXNM",
+      "sector": "Utilities",
+      "industry": "Utilities - Regulated Electric",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SMTC",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DMRC",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "JBLU",
+      "sector": "Industrials",
+      "industry": "Airlines",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TARS",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ADUS",
+      "sector": "Healthcare",
+      "industry": "Medical Care Facilities",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DSP",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AMZN",
+      "sector": "Consumer Cyclical",
+      "industry": "Internet Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ACHR",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CRCT",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FSTR",
+      "sector": "Industrials",
+      "industry": "Railroads",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NOTE",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EE",
+      "sector": "Energy",
+      "industry": "Oil & Gas Midstream",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TER",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SWI",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AUPH",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EBAY",
+      "sector": "Consumer Cyclical",
+      "industry": "Internet Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "QUAD",
+      "sector": "Industrials",
+      "industry": "Specialty Business Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "KOD",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "KAR",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto & Truck Dealerships",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ASO",
+      "sector": "Consumer Cyclical",
+      "industry": "Specialty Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EAT",
+      "sector": "Consumer Cyclical",
+      "industry": "Restaurants",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TCI",
+      "sector": "Real Estate",
+      "industry": "Real Estate Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "JBL",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CXM",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PCRX",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - Specialty & Generic",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MLAB",
+      "sector": "Technology",
+      "industry": "Scientific & Technical Instruments",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SNBR",
+      "sector": "Consumer Cyclical",
+      "industry": "Furnishings, Fixtures & Appliances",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FIGS",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Manufacturing",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BBSI",
+      "sector": "Industrials",
+      "industry": "Staffing & Employment Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MITK",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AAPL",
+      "sector": "Technology",
+      "industry": "Consumer Electronics",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GEO",
+      "sector": "Industrials",
+      "industry": "Security & Protection Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TNDM",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CDMO",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VITL",
+      "sector": "Consumer Defensive",
+      "industry": "Farm Products",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CYRX",
+      "sector": "Industrials",
+      "industry": "Integrated Freight & Logistics",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CSTE",
+      "sector": "Industrials",
+      "industry": "Building Products & Equipment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GILD",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - General",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CARG",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto & Truck Dealerships",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CCRN",
+      "sector": "Healthcare",
+      "industry": "Medical Care Facilities",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "JBTM",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MRAM",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CRK",
+      "sector": "Energy",
+      "industry": "Oil & Gas E&P",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TPR",
+      "sector": "Consumer Cyclical",
+      "industry": "Luxury Goods",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OPFI",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CALM",
+      "sector": "Consumer Defensive",
+      "industry": "Farm Products",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SRDX",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AEHR",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RENB",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CNP",
+      "sector": "Utilities",
+      "industry": "Utilities - Regulated Electric",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "XMTR",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "HON",
+      "sector": "Industrials",
+      "industry": "Conglomerates",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PRLB",
+      "sector": "Industrials",
+      "industry": "Metal Fabrication",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WEAV",
+      "sector": "Healthcare",
+      "industry": "Health Information Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VSCO",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GBTG",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DXPE",
+      "sector": "Industrials",
+      "industry": "Industrial Distribution",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LYV",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RBBN",
+      "sector": "Communication Services",
+      "industry": "Telecom Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ALKS",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - Specialty & Generic",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FFIV",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ATLC",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AMPL",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CDRE",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "APO",
+      "sector": "Financial Services",
+      "industry": "Asset Management",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "IONQ",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SWIM",
+      "sector": "Industrials",
+      "industry": "Building Products & Equipment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WBTN",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WAY",
+      "sector": "Healthcare",
+      "industry": "Health Information Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GOOGL",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ATEN",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CMPO",
+      "sector": "Industrials",
+      "industry": "Metal Fabrication",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "QTWO",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EW",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AXGN",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FUN",
+      "sector": "Consumer Cyclical",
+      "industry": "Leisure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DBI",
+      "sector": "Consumer Cyclical",
+      "industry": "Footwear & Accessories",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TTMI",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MBI",
+      "sector": "Financial Services",
+      "industry": "Insurance - Specialty",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GOOG",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GDYN",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CRDO",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RKLB",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DAKT",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AMBA",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TGLS",
+      "sector": "Basic Materials",
+      "industry": "Building Materials",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CTLP",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CCB",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MXCT",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BOOT",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SPOK",
+      "sector": "Healthcare",
+      "industry": "Health Information Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RL",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Manufacturing",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MFIN",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OLO",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SKYT",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RGTI",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OSIS",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "APP",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BBW",
+      "sector": "Consumer Cyclical",
+      "industry": "Specialty Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BYRN",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CLPR",
+      "sector": "Real Estate",
+      "industry": "REIT - Residential",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ZUO",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PRTH",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FULC",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VCEL",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VERX",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RMNI",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CADL",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "VLGEA",
+      "sector": "Consumer Defensive",
+      "industry": "Grocery Stores",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "JOUT",
+      "sector": "Consumer Cyclical",
+      "industry": "Leisure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SENEA",
+      "sector": "Consumer Defensive",
+      "industry": "Packaged Foods",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SHO",
+      "sector": "Real Estate",
+      "industry": "REIT - Hotel & Motel",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CHRS",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WALD",
+      "sector": "Consumer Defensive",
+      "industry": "Household & Personal Products",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BLX",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MEI",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ASAN",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DDOG",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CURV",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GRND",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CBZ",
+      "sector": "Industrials",
+      "industry": "Specialty Business Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PTON",
+      "sector": "Consumer Cyclical",
+      "industry": "Leisure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NRDY",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AVPT",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FORM",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NOW",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ALTR",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FTNT",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OB",
+      "sector": "Communication Services",
+      "industry": "Internet Content & Information",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SPT",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EGAN",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MDXG",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BA",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EXTR",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RSI",
+      "sector": "Consumer Cyclical",
+      "industry": "Gambling",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WST",
+      "sector": "Healthcare",
+      "industry": "Medical Instruments & Supplies",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MRVL",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WOR",
+      "sector": "Industrials",
+      "industry": "Metal Fabrication",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OSPN",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NPK",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BL",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DIS",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "IDCC",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "INN",
+      "sector": "Real Estate",
+      "industry": "REIT - Hotel & Motel",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CRM",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LRN",
+      "sector": "Consumer Defensive",
+      "industry": "Education & Training Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PSMT",
+      "sector": "Consumer Defensive",
+      "industry": "Discount Stores",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "APEI",
+      "sector": "Consumer Defensive",
+      "industry": "Education & Training Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "IRON",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ANET",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "COCO",
+      "sector": "Consumer Defensive",
+      "industry": "Beverages - Non-Alcoholic",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OSW",
+      "sector": "Consumer Cyclical",
+      "industry": "Leisure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "UTI",
+      "sector": "Consumer Defensive",
+      "industry": "Education & Training Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ODC",
+      "sector": "Basic Materials",
+      "industry": "Specialty Chemicals",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GDDY",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "KODK",
+      "sector": "Industrials",
+      "industry": "Specialty Business Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AIP",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PTVE",
+      "sector": "Consumer Cyclical",
+      "industry": "Packaging & Containers",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EVEX",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PPTA",
+      "sector": "Basic Materials",
+      "industry": "Other Precious Metals & Mining",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TRVI",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MGX",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CRMT",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto & Truck Dealerships",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FOX",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AMCX",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SLQT",
+      "sector": "Financial Services",
+      "industry": "Insurance Brokers",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PHR",
+      "sector": "Healthcare",
+      "industry": "Health Information Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "URBN",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GAMB",
+      "sector": "Consumer Cyclical",
+      "industry": "Gambling",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CCL",
+      "sector": "Consumer Cyclical",
+      "industry": "Travel Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OXM",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Manufacturing",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "KLTR",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PRCH",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AISP",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "INTA",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CME",
+      "sector": "Financial Services",
+      "industry": "Financial Data & Stock Exchanges",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CNDT",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MCS",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ATSG",
+      "sector": "Industrials",
+      "industry": "Airlines",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GKOS",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TTSH",
+      "sector": "Consumer Cyclical",
+      "industry": "Home Improvement Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SUM",
+      "sector": "Basic Materials",
+      "industry": "Building Materials",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ASLE",
+      "sector": "Industrials",
+      "industry": "Airports & Air Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WGS",
+      "sector": "Healthcare",
+      "industry": "Health Information Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GSAT",
+      "sector": "Communication Services",
+      "industry": "Telecom Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SABR",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LVO",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LAB",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MYRG",
+      "sector": "Industrials",
+      "industry": "Engineering & Construction",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ADEA",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ARQT",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TTWO",
+      "sector": "Communication Services",
+      "industry": "Electronic Gaming & Multimedia",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ULCC",
+      "sector": "Industrials",
+      "industry": "Airlines",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BBAI",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "KGS",
+      "sector": "Energy",
+      "industry": "Oil & Gas Equipment & Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "QBTS",
+      "sector": "Technology",
+      "industry": "Computer Hardware",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BKE",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EVRI",
+      "sector": "Consumer Cyclical",
+      "industry": "Gambling",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CXW",
+      "sector": "Industrials",
+      "industry": "Security & Protection Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GTLS",
+      "sector": "Industrials",
+      "industry": "Specialty Industrial Machinery",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TDS",
+      "sector": "Communication Services",
+      "industry": "Telecom Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AI",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GIII",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Manufacturing",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RDVT",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SOUN",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GOGO",
+      "sector": "Communication Services",
+      "industry": "Telecom Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ASML",
+      "sector": "Technology",
+      "industry": "Semiconductor Equipment & Materials",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ROIC",
+      "sector": "Real Estate",
+      "industry": "REIT - Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "JOBY",
+      "sector": "Industrials",
+      "industry": "Airports & Air Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "BKV",
+      "sector": "Energy",
+      "industry": "Oil & Gas E&P",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SNCY",
+      "sector": "Industrials",
+      "industry": "Airlines",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RM",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NVCR",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AVXL",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "DVAX",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - Specialty & Generic",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AAOI",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SGHC",
+      "sector": "Consumer Cyclical",
+      "industry": "Gambling",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "OUST",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PRDO",
+      "sector": "Consumer Defensive",
+      "industry": "Education & Training Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TH",
+      "sector": "Industrials",
+      "industry": "Specialty Business Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PRMB",
+      "sector": "Consumer Defensive",
+      "industry": "Beverages - Non-Alcoholic",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "QUIK",
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LFCR",
+      "sector": "Healthcare",
+      "industry": "Drug Manufacturers - Specialty & Generic",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CRWD",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PLTR",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NFLX",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TBPH",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CDXS",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FOXA",
+      "sector": "Communication Services",
+      "industry": "Entertainment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WWW",
+      "sector": "Consumer Cyclical",
+      "industry": "Footwear & Accessories",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "LNKB",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SONO",
+      "sector": "Technology",
+      "industry": "Consumer Electronics",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SVV",
+      "sector": "Consumer Cyclical",
+      "industry": "Specialty Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AZO",
+      "sector": "Consumer Cyclical",
+      "industry": "Specialty Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PLXS",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SLND",
+      "sector": "Industrials",
+      "industry": "Engineering & Construction",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GCO",
+      "sector": "Consumer Cyclical",
+      "industry": "Apparel Retail",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RDW",
+      "sector": "Industrials",
+      "industry": "Aerospace & Defense",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "AUR",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "TSLA",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto Manufacturers",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "V",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FARO",
+      "sector": "Technology",
+      "industry": "Scientific & Technical Instruments",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "GPI",
+      "sector": "Consumer Cyclical",
+      "industry": "Auto & Truck Dealerships",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EBTC",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "SMLR",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "FENC",
+      "sector": "Healthcare",
+      "industry": "Biotechnology",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "EMBC",
+      "sector": "Healthcare",
+      "industry": "Medical Instruments & Supplies",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NN",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PAR",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "UAL",
+      "sector": "Industrials",
+      "industry": "Airlines",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "CALX",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "ML",
+      "sector": "Technology",
+      "industry": "Software - Application",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "HCKT",
+      "sector": "Technology",
+      "industry": "Information Technology Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NTGR",
+      "sector": "Technology",
+      "industry": "Communication Equipment",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PVBC",
+      "sector": "Financial Services",
+      "industry": "Banks - Regional",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "NPCE",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "PMTS",
+      "sector": "Financial Services",
+      "industry": "Credit Services",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "RELY",
+      "sector": "Technology",
+      "industry": "Software - Infrastructure",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "WEYS",
+      "sector": "Consumer Cyclical",
+      "industry": "Footwear & Accessories",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "REVG",
+      "sector": "Industrials",
+      "industry": "Farm & Heavy Construction Machinery",
+      "status": "maintained"
+    },
+    {
+      "old_list": "list_49_date_12_18_24.txt",
+      "new_list": "list_50_date_12_19_24.txt",
+      "ticker": "STXS",
+      "sector": "Healthcare",
+      "industry": "Medical Instruments & Supplies",
+      "status": "maintained"
+    }
+  ]
+}
