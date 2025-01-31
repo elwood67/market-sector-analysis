@@ -194,15 +194,13 @@ class IndustryAnalyzer:
                         for _ in range(days_gap - 1):
                             industry_history[industry]['momentum_scores'].append(0)
                 
-                # Calculate weighted 5-day momentum
+                # Calculate 5-day momentum with weighted average
                 recent_changes = industry_history[industry]['daily_changes'][-5:]
                 if len(recent_changes) > 0:
                     weights = np.exp(np.linspace(0, 1, len(recent_changes)))
-                    momentum = np.average(recent_changes, weights=weights) * weight
+                    momentum = np.average(recent_changes, weights=weights)  # Removed weight multiplication
                     industry_history[industry]['momentum_scores'].append(momentum)
                     daily_changes[industry]['momentum'] = momentum
-                
-                industry_history[industry]['last_momentum_date'] = date
                 
                 # Track weighted trading volume
                 daily_volume = (daily_changes[industry]['added'] + daily_changes[industry]['removed']) * weight
@@ -235,15 +233,19 @@ class IndustryAnalyzer:
         volatility = np.std(changes) if changes else 0
         recent_trend = sum(changes[-7:]) if len(changes) >= 7 else 0
         
-        # Calculate momentum with exponential moving average and weighting
+        # Calculate momentum with exponential moving average
         momentum_scores = history['momentum_scores']
         if len(momentum_scores) >= 5:
             weights = np.exp(np.linspace(0, 1, 5))
-            current_momentum = np.average(momentum_scores[-5:], weights=weights) * weight
-            momentum_change = (current_momentum - momentum_scores[-5]) * weight
+            current_momentum = np.average(momentum_scores[-5:], weights=weights)
+            momentum_change = current_momentum - momentum_scores[-5]
         else:
-            current_momentum = momentum_scores[-1] * weight if momentum_scores else 0
+            current_momentum = momentum_scores[-1] if momentum_scores else 0
             momentum_change = 0
+        
+        # Apply size weight after all calculations
+        current_momentum = current_momentum * weight
+        momentum_change = momentum_change * weight
         
         # Calculate volume trend with weighting
         volume_history = history['volume_history']
