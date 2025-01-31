@@ -44,7 +44,7 @@ class IndustryAnalyzer:
         self.data_sets_dir = self.base_dir / 'data' / 'datasets'
         
         # Load industry weights
-        self.weights_path = self.base_dir / 'industry_weights' / 'industry_weights.json'
+        self.weights_path = self.base_dir / 'data' / 'weighting' / 'industry_weights.json'
         self.industry_weights = self.load_industry_weights()
         
         # Color schemes
