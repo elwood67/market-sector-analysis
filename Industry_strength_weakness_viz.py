@@ -127,10 +127,6 @@ class IndustryAnalyzer:
                 st.error(f"Error reading file {json_file}: {e}")
                 continue
             
-            # Set weighting data path
-            weighting_path = Path(r"C:\Users\davet\Documents\GitHub\market-sector-analysis\data\weighting")
-        
-       
             # Process date
             parts = json_file.stem.split('_')
             month, day = int(parts[2]), int(parts[3])
@@ -203,12 +199,18 @@ class IndustryAnalyzer:
                     weighted_momentum = momentum * weight
                     industry_history[industry]['momentum_scores'].append(momentum)  # Store unweighted
                     daily_changes[industry]['momentum'] = weighted_momentum  # Store weighted
-
+                
                 industry_history[industry]['last_momentum_date'] = date
                 
                 # Track trading volume (weighted)
                 daily_volume = (daily_changes[industry]['added'] + daily_changes[industry]['removed'])
                 industry_history[industry]['volume_history'].append(daily_volume)
+            
+            daily_data.append({
+                'date': date_str,
+                'changes': dict(daily_changes),
+                'active_counts': {ind: len(stocks) for ind, stocks in active_stocks.items()}
+            })
         
         # Calculate final metrics with weighting
         metrics = {}
@@ -223,10 +225,10 @@ class IndustryAnalyzer:
         weight = self.get_industry_weight(industry)
         
         # Basic volume metrics with weighting
-        total_volume = (history['total_added'] + history['total_removed']) * weight
-        avg_active = sum(d['active_counts'].get(industry, 0) for d in daily_data[-7:]) / 7
+        total_volume = history['total_added'] + history['total_removed']
+        avg_active = sum(d['active_counts'].get(industry, 0) for d in daily_data[-7:]) / 7 if daily_data else 0
         
-        # Calculate volatility and trends with weighting
+        # Calculate volatility and trends
         changes = history['daily_changes']
         volatility = np.std(changes) if changes else 0
         recent_trend = sum(changes[-7:]) if len(changes) >= 7 else 0
@@ -244,13 +246,9 @@ class IndustryAnalyzer:
             current_momentum = (momentum_scores[-1] if momentum_scores else 0) * weight
             momentum_change = 0
         
-        # Apply size weight after all calculations
-        current_momentum = current_momentum * weight
-        momentum_change = momentum_change * weight
-        
-        # Calculate volume trend with weighting
+        # Calculate volume trend
         volume_history = history['volume_history']
-        recent_volume = (sum(volume_history[-5:]) / 5) * weight if volume_history else 0
+        recent_volume = sum(volume_history[-5:]) / 5 if volume_history else 0
         
         # Volatility factor (reduces both scores)
         volatility_factor = max(0, 1 - (volatility * 0.15))
@@ -264,8 +262,8 @@ class IndustryAnalyzer:
             (addition_ratio * 0.3) +
             (current_strength * 0.3) +
             (trend_strength * 0.4)
-        ) * weight
-        strength_score = raw_strength_score * volatility_factor
+        )
+        strength_score = raw_strength_score * volatility_factor * weight
         
         # Weakness Score Components with weighting
         removal_ratio = history['total_removed'] / max(total_volume, 1)
@@ -276,14 +274,14 @@ class IndustryAnalyzer:
             (removal_ratio * 0.3) +
             (current_weakness * 0.3) +
             (trend_weakness * 0.4)
-        ) * weight
-        weakness_score = raw_weakness_score * volatility_factor
+        )
+        weakness_score = raw_weakness_score * volatility_factor * weight
         
         return {
             'sector': history['sector'],
             'strength_score': round(strength_score * 100, 2),
             'weakness_score': round(weakness_score * 100, 2),
-            'active_stocks': daily_data[-1]['active_counts'].get(industry, 0),
+            'active_stocks': daily_data[-1]['active_counts'].get(industry, 0) if daily_data else 0,
             'total_added': history['total_added'],
             'total_removed': history['total_removed'],
             'recent_trend': recent_trend,
