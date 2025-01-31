@@ -43,6 +43,10 @@ class IndustryAnalyzer:
         self.base_dir = Path(os.path.dirname(os.path.abspath(__file__)))
         self.data_sets_dir = self.base_dir / 'data' / 'datasets'
         
+        # Load industry weights
+        self.weights_path = self.base_dir / 'industry_weights' / 'industry_weights.json'
+        self.industry_weights = self.load_industry_weights()
+        
         # Color schemes
         self.sector_colors = {
             'Technology': '#FF0000',
@@ -60,6 +64,27 @@ class IndustryAnalyzer:
         
         # Create darker shades for weakness visualization
         self.weakness_colors = {k: self.darken_color(v) for k, v in self.sector_colors.items()}
+
+    def load_industry_weights(self):
+        """Load industry weighting data"""
+        try:
+            with open(self.weights_path, 'r') as f:
+                weights_data = json.load(f)
+                return weights_data['weights']
+        except Exception as e:
+            st.warning(f"Could not load industry weights: {e}")
+            return {}
+
+    def get_industry_weight(self, industry):
+        """Get composite weight for an industry"""
+        if industry in self.industry_weights:
+            return self.industry_weights[industry]['composite_weight']
+        return 0.01  # Small default weight for unknown industries
+
+    def apply_size_weight(self, score, industry):
+        """Apply size-based weighting to a score"""
+        weight = self.get_industry_weight(industry)
+        return score * weight
 
     def darken_color(self, hex_color):
         """Create a darker version of a hex color"""
@@ -93,7 +118,7 @@ class IndustryAnalyzer:
             'momentum_scores': [],
             'last_momentum_date': None
         })
-        
+
         for json_file in json_files:
             try:
                 with open(json_file, 'r') as f:
@@ -102,6 +127,10 @@ class IndustryAnalyzer:
                 st.error(f"Error reading file {json_file}: {e}")
                 continue
             
+            # Set weighting data path
+            weighting_path = Path(r"C:\Users\davet\Documents\GitHub\market-sector-analysis\data\weighting")
+        
+       
             # Process date
             parts = json_file.stem.split('_')
             month, day = int(parts[2]), int(parts[3])
@@ -142,7 +171,7 @@ class IndustryAnalyzer:
                     
                     daily_changes[industry]['sector'] = sector
 
-            # Update industry statistics
+            # Update industry statistics with weighting
             for industry in industry_history.keys():
                 active_count = len(active_stocks[industry])
                 industry_history[industry]['max_active'] = max(
@@ -151,8 +180,9 @@ class IndustryAnalyzer:
                 )
                 industry_history[industry]['days_tracked'] += 1
                 
-                # Calculate net change
-                net_change = daily_changes[industry]['added'] - daily_changes[industry]['removed']
+                # Calculate weighted net change
+                weight = self.get_industry_weight(industry)
+                net_change = (daily_changes[industry]['added'] - daily_changes[industry]['removed']) * weight
                 industry_history[industry]['daily_changes'].append(net_change)
                 
                 # Improved momentum calculation with gap handling
@@ -164,19 +194,18 @@ class IndustryAnalyzer:
                         for _ in range(days_gap - 1):
                             industry_history[industry]['momentum_scores'].append(0)
                 
-                # Calculate 5-day momentum with weighted average
+                # Calculate weighted 5-day momentum
                 recent_changes = industry_history[industry]['daily_changes'][-5:]
                 if len(recent_changes) > 0:
-                    # Weight more recent changes higher
                     weights = np.exp(np.linspace(0, 1, len(recent_changes)))
-                    momentum = np.average(recent_changes, weights=weights)
+                    momentum = np.average(recent_changes, weights=weights) * weight
                     industry_history[industry]['momentum_scores'].append(momentum)
                     daily_changes[industry]['momentum'] = momentum
                 
                 industry_history[industry]['last_momentum_date'] = date
                 
-                # Track trading volume
-                daily_volume = daily_changes[industry]['added'] + daily_changes[industry]['removed']
+                # Track weighted trading volume
+                daily_volume = (daily_changes[industry]['added'] + daily_changes[industry]['removed']) * weight
                 industry_history[industry]['volume_history'].append(daily_volume)
             
             daily_data.append({
@@ -185,7 +214,7 @@ class IndustryAnalyzer:
                 'active_counts': {ind: len(stocks) for ind, stocks in active_stocks.items()}
             })
         
-        # Calculate final metrics
+        # Calculate final metrics with weighting
         metrics = {}
         for industry, history in industry_history.items():
             if history['days_tracked'] > 0:
@@ -194,34 +223,36 @@ class IndustryAnalyzer:
         return metrics, daily_data, industry_history
 
     def calculate_industry_metrics(self, industry, history, daily_data):
-        """Calculate comprehensive metrics for an industry"""
-        # Basic volume metrics
-        total_volume = history['total_added'] + history['total_removed']
+        """Calculate comprehensive metrics for an industry with size weighting"""
+        weight = self.get_industry_weight(industry)
+        
+        # Basic volume metrics with weighting
+        total_volume = (history['total_added'] + history['total_removed']) * weight
         avg_active = sum(d['active_counts'].get(industry, 0) for d in daily_data[-7:]) / 7
         
-        # Calculate volatility and trends
+        # Calculate volatility and trends with weighting
         changes = history['daily_changes']
         volatility = np.std(changes) if changes else 0
         recent_trend = sum(changes[-7:]) if len(changes) >= 7 else 0
         
-        # Calculate momentum with exponential moving average
+        # Calculate momentum with exponential moving average and weighting
         momentum_scores = history['momentum_scores']
         if len(momentum_scores) >= 5:
             weights = np.exp(np.linspace(0, 1, 5))
-            current_momentum = np.average(momentum_scores[-5:], weights=weights)
-            momentum_change = current_momentum - momentum_scores[-5]
+            current_momentum = np.average(momentum_scores[-5:], weights=weights) * weight
+            momentum_change = (current_momentum - momentum_scores[-5]) * weight
         else:
-            current_momentum = momentum_scores[-1] if momentum_scores else 0
+            current_momentum = momentum_scores[-1] * weight if momentum_scores else 0
             momentum_change = 0
         
-        # Calculate volume trend
+        # Calculate volume trend with weighting
         volume_history = history['volume_history']
-        recent_volume = sum(volume_history[-5:]) / 5 if volume_history else 0
+        recent_volume = (sum(volume_history[-5:]) / 5) * weight if volume_history else 0
         
         # Volatility factor (reduces both scores)
         volatility_factor = max(0, 1 - (volatility * 0.15))
         
-        # Strength Score Components
+        # Strength Score Components with weighting
         addition_ratio = history['total_added'] / max(total_volume, 1)
         current_strength = avg_active / max(history['max_active'], 1)
         trend_strength = max(recent_trend, 0) / max(history['max_active'], 1)
@@ -230,10 +261,10 @@ class IndustryAnalyzer:
             (addition_ratio * 0.3) +
             (current_strength * 0.3) +
             (trend_strength * 0.4)
-        )
+        ) * weight
         strength_score = raw_strength_score * volatility_factor
         
-        # Weakness Score Components
+        # Weakness Score Components with weighting
         removal_ratio = history['total_removed'] / max(total_volume, 1)
         current_weakness = 1 - current_strength
         trend_weakness = abs(min(recent_trend, 0)) / max(history['max_active'], 1)
@@ -242,7 +273,7 @@ class IndustryAnalyzer:
             (removal_ratio * 0.3) +
             (current_weakness * 0.3) +
             (trend_weakness * 0.4)
-        )
+        ) * weight
         weakness_score = raw_weakness_score * volatility_factor
         
         return {
@@ -260,11 +291,12 @@ class IndustryAnalyzer:
             'max_active': history['max_active'],
             'raw_strength': round(raw_strength_score * 100, 2),
             'raw_weakness': round(raw_weakness_score * 100, 2),
-            'volatility_factor': round(volatility_factor, 2)
+            'volatility_factor': round(volatility_factor, 2),
+            'size_weight': round(weight, 4)  # Added size weight to metrics
         }
 
     def create_analysis_chart(self, metrics, mode='strength'):
-        """Create industry analysis visualization"""
+        """Create industry analysis visualization with size weighting"""
         score_key = f'{mode}_score'
         sorted_industries = sorted(
             metrics.items(),
@@ -289,6 +321,7 @@ class IndustryAnalyzer:
                 f"Sector: {m['sector']}<br>" +
                 f"{mode.title()} Score: {m[score_key]}<br>" +
                 f"Raw Score: {m[f'raw_{mode}']}<br>" +
+                f"Size Weight: {m['size_weight']}<br>" +  # Added size weight to hover
                 f"Volatility Impact: {m['volatility_factor']}<br>" +
                 f"Active Stocks: {m['active_stocks']}<br>" +
                 f"Recent Trend: {m['recent_trend']}<br>" +
@@ -309,7 +342,7 @@ class IndustryAnalyzer:
             hoverinfo='text'
         ))
         
-        title = 'Industry Strength Analysis' if mode == 'strength' else 'Industry Weakness Analysis'
+        title = f'Industry {mode.title()} Analysis (Size Weighted)'
         fig.update_layout(
             title=title,
             xaxis_title=f'{mode.title()} Score',
@@ -322,7 +355,7 @@ class IndustryAnalyzer:
         return fig
 
     def create_momentum_chart(self, metrics, mode='strength'):
-        """Create momentum analysis chart"""
+        """Create momentum analysis chart with size weighting"""
         momentum_data = []
         
         score_key = f'{mode}_score'
@@ -333,11 +366,12 @@ class IndustryAnalyzer:
                 'momentum': m['momentum'],
                 'momentum_change': m['momentum_change'],
                 'score': m[score_key],
-                'volume': m['volume_trend']
+                'volume': m['volume_trend'],
+                'size_weight': m['size_weight']
             })
         
-        # Sort by momentum and score
-        momentum_data.sort(key=lambda x: (x['momentum'], x['score']), reverse=True)
+        # Sort by weighted momentum and score
+        momentum_data.sort(key=lambda x: (x['momentum'] * x['size_weight'], x['score']), reverse=True)
         momentum_data = momentum_data[:20]  # Top 20
         
         fig = go.Figure()
@@ -351,8 +385,10 @@ class IndustryAnalyzer:
             hovertemplate=(
                 "<b>%{x}</b><br>" +
                 "Momentum: %{y:.2f}<br>" +
+                "Size Weight: " + "%{customdata:.4f}<br>" +  # Added size weight to hover
                 "<extra></extra>"
-            )
+            ),
+            customdata=[d['size_weight'] for d in momentum_data]
         ))
         
         # Add momentum change line
@@ -371,7 +407,7 @@ class IndustryAnalyzer:
         ))
         
         fig.update_layout(
-            title=f'Industry Momentum Analysis ({mode.title()})',
+            title=f'Industry Momentum Analysis ({mode.title()}) - Size Weighted',
             xaxis_title='Industry',
             yaxis_title='Momentum Score',
             template='plotly_dark',
@@ -385,11 +421,12 @@ class IndustryAnalyzer:
         return fig
 
     def create_score_comparison(self, metrics):
-        """Create scatter plot comparing strength vs weakness"""
+        """Create scatter plot comparing strength vs weakness with size weights"""
         industries = list(metrics.keys())
         strength_scores = [m['strength_score'] for m in metrics.values()]
         weakness_scores = [m['weakness_score'] for m in metrics.values()]
         sectors = [m['sector'] for m in metrics.values()]
+        weights = [m['size_weight'] for m in metrics.values()]  # Added weights
         
         fig = go.Figure()
         
@@ -406,7 +443,7 @@ class IndustryAnalyzer:
                 name=sector,
                 marker=dict(
                     color=self.sector_colors.get(sector, '#999999'),
-                    size=12,
+                    size=[max(10, min(50, w * 1000)) for w, m in zip(weights, mask) if m],  # Size based on weight
                     symbol='circle',
                     line=dict(width=1, color='white')
                 ),
@@ -415,13 +452,15 @@ class IndustryAnalyzer:
                     "Sector: " + sector + "<br>" +
                     "Strength Score: %{x:.1f}<br>" +
                     "Weakness Score: %{y:.1f}<br>" +
+                    "Size Weight: %{customdata:.4f}<br>" +  # Added size weight to hover
                     "<extra></extra>"
                 ),
-                text=[i for i, m in zip(industries, mask) if m]
+                text=[i for i, m in zip(industries, mask) if m],
+                customdata=[w for w, m in zip(weights, mask) if m]
             ))
         
         fig.update_layout(
-            title='Industry Strength vs Weakness Matrix',
+            title='Industry Strength vs Weakness Matrix (Marker Size = Industry Weight)',
             xaxis_title='Strength Score',
             yaxis_title='Weakness Score',
             template='plotly_dark',
@@ -454,7 +493,7 @@ class IndustryAnalyzer:
         return fig
 
     def create_volatility_chart(self, metrics):
-        """Create volatility analysis chart"""
+        """Create volatility analysis chart with size weighting"""
         volatility_data = [
             {
                 'industry': industry,
@@ -462,13 +501,17 @@ class IndustryAnalyzer:
                 'volatility': m['volatility'],
                 'strength_score': m['strength_score'],
                 'weakness_score': m['weakness_score'],
-                'momentum': m['momentum']
+                'momentum': m['momentum'],
+                'size_weight': m['size_weight']
             }
             for industry, m in metrics.items()
         ]
         
-        # Sort by volatility
-        volatility_data.sort(key=lambda x: x['volatility'], reverse=True)
+        # Sort by weighted volatility
+        for d in volatility_data:
+            d['weighted_volatility'] = d['volatility'] * d['size_weight']
+        
+        volatility_data.sort(key=lambda x: x['weighted_volatility'], reverse=True)
         volatility_data = volatility_data[:20]  # Top 20 most volatile
         
         fig = go.Figure()
@@ -484,11 +527,13 @@ class IndustryAnalyzer:
             hovertemplate=(
                 "<b>%{x}</b><br>" +
                 "Volatility: %{y:.2f}<br>" +
+                "Size Weight: " + "%{customdata:.4f}<br>" +
                 "<extra></extra>"
-            )
+            ),
+            customdata=[d['size_weight'] for d in volatility_data]
         ))
         
-        # Add strength/weakness/momentum markers
+        # Add strength/weakness markers
         max_vol = max(d['volatility'] for d in volatility_data)
         
         fig.add_trace(go.Scatter(
@@ -496,7 +541,11 @@ class IndustryAnalyzer:
             x=[d['industry'] for d in volatility_data],
             y=[d['strength_score']/100 * max_vol for d in volatility_data],
             mode='markers',
-            marker=dict(color='green', size=10, symbol='diamond'),
+            marker=dict(
+                color='green',
+                size=[max(8, min(20, w * 500)) for w in [d['size_weight'] for d in volatility_data]],
+                symbol='diamond'
+            ),
             hovertemplate="Strength Score: %{text:.1f}<br><extra></extra>",
             text=[d['strength_score'] for d in volatility_data]
         ))
@@ -506,13 +555,17 @@ class IndustryAnalyzer:
             x=[d['industry'] for d in volatility_data],
             y=[d['weakness_score']/100 * max_vol for d in volatility_data],
             mode='markers',
-            marker=dict(color='red', size=10, symbol='diamond'),
+            marker=dict(
+                color='red',
+                size=[max(8, min(20, w * 500)) for w in [d['size_weight'] for d in volatility_data]],
+                symbol='diamond'
+            ),
             hovertemplate="Weakness Score: %{text:.1f}<br><extra></extra>",
             text=[d['weakness_score'] for d in volatility_data]
         ))
         
         fig.update_layout(
-            title='Industry Volatility Analysis',
+            title='Industry Volatility Analysis (Size Weighted)',
             xaxis_title='Industry',
             yaxis_title='Volatility Score',
             template='plotly_dark',
@@ -545,33 +598,33 @@ def main():
         
         with tabs[0]:
             st.markdown("""
-            ### Strength Score Components:
+            ### Strength Score Components (Size Weighted):
             - 30% Addition Ratio (Added vs Total volume)
             - 30% Current Strength (Active vs Historical max)
             - 40% Recent Trend (Positive changes in last 7 days)
-            - Both Strength and Weakness scores are reduced by volatility
+            - All scores are adjusted by industry size weight and volatility
             """)
             st.plotly_chart(analyzer.create_analysis_chart(metrics, 'strength'), use_container_width=True)
             st.plotly_chart(analyzer.create_momentum_chart(metrics, 'strength'), use_container_width=True)
         
         with tabs[1]:
             st.markdown("""
-            ### Weakness Score Components:
+            ### Weakness Score Components (Size Weighted):
             - 30% Removal Ratio (Removed vs Total volume)
             - 30% Current Weakness (Below historical max)
             - 40% Recent Trend (Negative changes in last 7 days)
-            - Both Strength and Weakness scores are reduced by volatility
+            - All scores are adjusted by industry size weight and volatility
             """)
             st.plotly_chart(analyzer.create_analysis_chart(metrics, 'weakness'), use_container_width=True)
             st.plotly_chart(analyzer.create_momentum_chart(metrics, 'weakness'), use_container_width=True)
         
         with tabs[2]:
             st.markdown("""
-            ### Momentum Analysis
-            - Bar height shows current momentum
+            ### Momentum Analysis (Size Weighted)
+            - Bar height shows current momentum (adjusted by industry size)
             - Line shows momentum change (acceleration)
             - Colors indicate sectors
-            - Higher values indicate stronger trends
+            - Marker sizes reflect industry weights
             """)
             col1, col2 = st.columns(2)
             with col1:
@@ -584,6 +637,7 @@ def main():
                         'Industry': industry,
                         'Sector': m['sector'],
                         'Active Stocks': m['active_stocks'],
+                        'Size Weight': m['size_weight'],
                         'Strength': m['strength_score'],
                         'Weakness': m['weakness_score'],
                         'Momentum': m['momentum'],
@@ -595,7 +649,8 @@ def main():
         
         with tabs[3]:
             st.markdown("""
-            ### Strength vs Weakness Matrix
+            ### Strength vs Weakness Matrix (Size Weighted)
+            - Marker size indicates industry weight
             - Higher strength and lower weakness scores indicate bullish trends
             - Higher weakness and lower strength scores indicate bearish trends
             - Color indicates sector

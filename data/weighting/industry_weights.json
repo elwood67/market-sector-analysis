@@ -1,0 +1,1347 @@
+{
+  "metadata": {
+    "min_stocks": 5,
+    "total_industries": 133,
+    "total_stocks": 4815,
+    "timestamp": "2025-01-31T10:09:25.990460"
+  },
+  "size_categories": {
+    "Very Large": 6,
+    "Large": 11,
+    "Medium": 46,
+    "Small": 51,
+    "Very Small": 19
+  },
+  "weights": {
+    "Biotechnology": {
+      "sector": "Healthcare",
+      "stock_count": 546,
+      "size_category": "Very Large",
+      "market_weight": 0.1133956386292835,
+      "log_weight": 0.015021589600663096,
+      "sqrt_weight": 0.03370486531424912,
+      "size_score": 1.0,
+      "composite_weight": 0.016918023807152436
+    },
+    "Asset Management": {
+      "sector": "Financial Services",
+      "stock_count": 370,
+      "size_category": "Very Large",
+      "market_weight": 0.07684319833852545,
+      "log_weight": 0.01409651535990647,
+      "sqrt_weight": 0.027745792670693815,
+      "size_score": 1.0,
+      "composite_weight": 0.01619759351757167
+    },
+    "Banks - Regional": {
+      "sector": "Financial Services",
+      "stock_count": 365,
+      "size_category": "Very Large",
+      "market_weight": 0.07580477673935618,
+      "log_weight": 0.014064185193079228,
+      "sqrt_weight": 0.02755768343280863,
+      "size_score": 1.0,
+      "composite_weight": 0.01617703898712119
+    },
+    "Software - Application": {
+      "sector": "Technology",
+      "stock_count": 194,
+      "size_category": "Very Large",
+      "market_weight": 0.04029075804776739,
+      "log_weight": 0.01256395885121513,
+      "sqrt_weight": 0.020090795803018355,
+      "size_score": 1.0,
+      "composite_weight": 0.015468350622556649
+    },
+    "Medical Devices": {
+      "sector": "Healthcare",
+      "stock_count": 129,
+      "size_category": "Very Large",
+      "market_weight": 0.02679127725856698,
+      "log_weight": 0.011597858460480025,
+      "sqrt_weight": 0.016382913182629372,
+      "size_score": 1.0,
+      "composite_weight": 0.015193223812455067
+    },
+    "Software - Infrastructure": {
+      "sector": "Technology",
+      "stock_count": 119,
+      "size_category": "Very Large",
+      "market_weight": 0.02471443406022845,
+      "log_weight": 0.011407140961951716,
+      "sqrt_weight": 0.015735108988027643,
+      "size_score": 1.0,
+      "composite_weight": 0.015150286069278379
+    },
+    "Unknown": {
+      "sector": "Unknown",
+      "stock_count": 92,
+      "size_category": "Large",
+      "market_weight": 0.019106957424714435,
+      "log_weight": 0.01079981003004812,
+      "sqrt_weight": 0.013835351215529677,
+      "size_score": 0.8,
+      "composite_weight": 0.012131659863583182
+    },
+    "Drug Manufacturers - Specialty & Generic": {
+      "sector": "Healthcare",
+      "stock_count": 74,
+      "size_category": "Large",
+      "market_weight": 0.015368639667705089,
+      "log_weight": 0.010287264847383328,
+      "sqrt_weight": 0.012408295700257362,
+      "size_score": 0.8,
+      "composite_weight": 0.012051916601610108
+    },
+    "Specialty Industrial Machinery": {
+      "sector": "Industrials",
+      "stock_count": 62,
+      "size_category": "Large",
+      "market_weight": 0.012876427829698858,
+      "log_weight": 0.009871833600456837,
+      "sqrt_weight": 0.011357745146096117,
+      "size_score": 0.8,
+      "composite_weight": 0.011997684778143936
+    },
+    "Oil & Gas E&P": {
+      "sector": "Energy",
+      "stock_count": 62,
+      "size_category": "Large",
+      "market_weight": 0.012876427829698858,
+      "log_weight": 0.009871833600456837,
+      "sqrt_weight": 0.011357745146096117,
+      "size_score": 0.8,
+      "composite_weight": 0.011997684778143936
+    },
+    "Semiconductors": {
+      "sector": "Technology",
+      "stock_count": 60,
+      "size_category": "Large",
+      "market_weight": 0.012461059190031152,
+      "log_weight": 0.009794965749262696,
+      "sqrt_weight": 0.01117305405458943,
+      "size_score": 0.8,
+      "composite_weight": 0.011988535464254896
+    },
+    "Internet Content & Information": {
+      "sector": "Communication Services",
+      "stock_count": 55,
+      "size_category": "Large",
+      "market_weight": 0.01142263759086189,
+      "log_weight": 0.009591192345527343,
+      "sqrt_weight": 0.010697384828290786,
+      "size_score": 0.8,
+      "composite_weight": 0.011965493846228383
+    },
+    "Aerospace & Defense": {
+      "sector": "Industrials",
+      "stock_count": 54,
+      "size_category": "Large",
+      "market_weight": 0.011214953271028037,
+      "log_weight": 0.009548259711230345,
+      "sqrt_weight": 0.010599689769804566,
+      "size_score": 0.8,
+      "composite_weight": 0.01196085392755224
+    },
+    "Packaged Foods": {
+      "sector": "Consumer Defensive",
+      "stock_count": 53,
+      "size_category": "Large",
+      "market_weight": 0.011007268951194185,
+      "log_weight": 0.009504539278368172,
+      "sqrt_weight": 0.010501085861359923,
+      "size_score": 0.8,
+      "composite_weight": 0.011956202580463642
+    },
+    "Information Technology Services": {
+      "sector": "Technology",
+      "stock_count": 52,
+      "size_category": "Large",
+      "market_weight": 0.010799584631360333,
+      "log_weight": 0.00946000159400127,
+      "sqrt_weight": 0.01040154725601951,
+      "size_score": 0.8,
+      "composite_weight": 0.011951539377695577
+    },
+    "Medical Instruments & Supplies": {
+      "sector": "Healthcare",
+      "stock_count": 51,
+      "size_category": "Large",
+      "market_weight": 0.01059190031152648,
+      "log_weight": 0.009414615521966985,
+      "sqrt_weight": 0.01030104685800238,
+      "size_score": 0.8,
+      "composite_weight": 0.011946863867562895
+    },
+    "Specialty Chemicals": {
+      "sector": "Basic Materials",
+      "stock_count": 51,
+      "size_category": "Large",
+      "market_weight": 0.01059190031152648,
+      "log_weight": 0.009414615521966985,
+      "sqrt_weight": 0.01030104685800238,
+      "size_score": 0.8,
+      "composite_weight": 0.011946863867562895
+    },
+    "Communication Equipment": {
+      "sector": "Technology",
+      "stock_count": 49,
+      "size_category": "Medium",
+      "market_weight": 0.010176531671858774,
+      "log_weight": 0.009321164456648223,
+      "sqrt_weight": 0.010097045531930028,
+      "size_score": 0.6,
+      "composite_weight": 0.009036120019619825
+    },
+    "Diagnostics & Research": {
+      "sector": "Healthcare",
+      "stock_count": 49,
+      "size_category": "Medium",
+      "market_weight": 0.010176531671858774,
+      "log_weight": 0.009321164456648223,
+      "sqrt_weight": 0.010097045531930028,
+      "size_score": 0.6,
+      "composite_weight": 0.009036120019619825
+    },
+    "Capital Markets": {
+      "sector": "Financial Services",
+      "stock_count": 49,
+      "size_category": "Medium",
+      "market_weight": 0.010176531671858774,
+      "log_weight": 0.009321164456648223,
+      "sqrt_weight": 0.010097045531930028,
+      "size_score": 0.6,
+      "composite_weight": 0.009036120019619825
+    },
+    "Oil & Gas Equipment & Services": {
+      "sector": "Energy",
+      "stock_count": 46,
+      "size_category": "Medium",
+      "market_weight": 0.009553478712357217,
+      "log_weight": 0.009173734134005048,
+      "sqrt_weight": 0.009783070664598579,
+      "size_score": 0.6,
+      "composite_weight": 0.00902192996736675
+    },
+    "Telecom Services": {
+      "sector": "Communication Services",
+      "stock_count": 46,
+      "size_category": "Medium",
+      "market_weight": 0.009553478712357217,
+      "log_weight": 0.009173734134005048,
+      "sqrt_weight": 0.009783070664598579,
+      "size_score": 0.6,
+      "composite_weight": 0.00902192996736675
+    },
+    "Health Information Services": {
+      "sector": "Healthcare",
+      "stock_count": 45,
+      "size_category": "Medium",
+      "market_weight": 0.009345794392523364,
+      "log_weight": 0.009122491368963821,
+      "sqrt_weight": 0.009676148649131171,
+      "size_score": 0.6,
+      "composite_weight": 0.009017169495536678
+    },
+    "REIT - Mortgage": {
+      "sector": "Real Estate",
+      "stock_count": 44,
+      "size_category": "Medium",
+      "market_weight": 0.009138110072689512,
+      "log_weight": 0.009070122299605392,
+      "sqrt_weight": 0.009568031863013244,
+      "size_score": 0.6,
+      "composite_weight": 0.009012392684669121
+    },
+    "Medical Care Facilities": {
+      "sector": "Healthcare",
+      "stock_count": 44,
+      "size_category": "Medium",
+      "market_weight": 0.009138110072689512,
+      "log_weight": 0.009070122299605392,
+      "sqrt_weight": 0.009568031863013244,
+      "size_score": 0.6,
+      "composite_weight": 0.009012392684669121
+    },
+    "Auto Parts": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 44,
+      "size_category": "Medium",
+      "market_weight": 0.009138110072689512,
+      "log_weight": 0.009070122299605392,
+      "sqrt_weight": 0.009568031863013244,
+      "size_score": 0.6,
+      "composite_weight": 0.009012392684669121
+    },
+    "Insurance - Property & Casualty": {
+      "sector": "Financial Services",
+      "stock_count": 43,
+      "size_category": "Medium",
+      "market_weight": 0.008930425752855659,
+      "log_weight": 0.00901657629925802,
+      "sqrt_weight": 0.009458679336101335,
+      "size_score": 0.6,
+      "composite_weight": 0.009007598800334608
+    },
+    "Restaurants": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 43,
+      "size_category": "Medium",
+      "market_weight": 0.008930425752855659,
+      "log_weight": 0.00901657629925802,
+      "sqrt_weight": 0.009458679336101335,
+      "size_score": 0.6,
+      "composite_weight": 0.009007598800334608
+    },
+    "Utilities - Regulated Electric": {
+      "sector": "Utilities",
+      "stock_count": 42,
+      "size_category": "Medium",
+      "market_weight": 0.008722741433021807,
+      "log_weight": 0.008961799249160362,
+      "sqrt_weight": 0.009348047701779454,
+      "size_score": 0.6,
+      "composite_weight": 0.00900278705744472
+    },
+    "Real Estate Services": {
+      "sector": "Real Estate",
+      "stock_count": 42,
+      "size_category": "Medium",
+      "market_weight": 0.008722741433021807,
+      "log_weight": 0.008961799249160362,
+      "sqrt_weight": 0.009348047701779454,
+      "size_score": 0.6,
+      "composite_weight": 0.00900278705744472
+    },
+    "Credit Services": {
+      "sector": "Financial Services",
+      "stock_count": 42,
+      "size_category": "Medium",
+      "market_weight": 0.008722741433021807,
+      "log_weight": 0.008961799249160362,
+      "sqrt_weight": 0.009348047701779454,
+      "size_score": 0.6,
+      "composite_weight": 0.00900278705744472
+    },
+    "Oil & Gas Midstream": {
+      "sector": "Energy",
+      "stock_count": 40,
+      "size_category": "Medium",
+      "market_weight": 0.008307372793354102,
+      "log_weight": 0.008848316052164297,
+      "sqrt_weight": 0.009122760434092938,
+      "size_score": 0.6,
+      "composite_weight": 0.008993106573162038
+    },
+    "Electronic Components": {
+      "sector": "Technology",
+      "stock_count": 39,
+      "size_category": "Medium",
+      "market_weight": 0.00809968847352025,
+      "log_weight": 0.008789481044675897,
+      "sqrt_weight": 0.009008004162377216,
+      "size_score": 0.6,
+      "composite_weight": 0.008988235962418321
+    },
+    "Specialty Retail": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 38,
+      "size_category": "Medium",
+      "market_weight": 0.007892004153686396,
+      "log_weight": 0.008729156386161374,
+      "sqrt_weight": 0.0088917669808064,
+      "size_score": 0.6,
+      "composite_weight": 0.008983343741650046
+    },
+    "Entertainment": {
+      "sector": "Communication Services",
+      "stock_count": 35,
+      "size_category": "Medium",
+      "market_weight": 0.007268951194184839,
+      "log_weight": 0.008538438887633067,
+      "sqrt_weight": 0.008533560991498221,
+      "size_score": 0.6,
+      "composite_weight": 0.008968525732299993
+    },
+    "Engineering & Construction": {
+      "sector": "Industrials",
+      "stock_count": 34,
+      "size_category": "Medium",
+      "market_weight": 0.007061266874350987,
+      "log_weight": 0.008471316230958955,
+      "sqrt_weight": 0.00841076953953524,
+      "size_score": 0.6,
+      "composite_weight": 0.008963534894537141
+    },
+    "REIT - Retail": {
+      "sector": "Real Estate",
+      "stock_count": 33,
+      "size_category": "Medium",
+      "market_weight": 0.006853582554517134,
+      "log_weight": 0.008402247721388888,
+      "sqrt_weight": 0.00828615865758842,
+      "size_score": 0.6,
+      "composite_weight": 0.008958515828734213
+    },
+    "Electrical Equipment & Parts": {
+      "sector": "Industrials",
+      "stock_count": 32,
+      "size_category": "Medium",
+      "market_weight": 0.006645898234683281,
+      "log_weight": 0.00833111716345241,
+      "sqrt_weight": 0.008159644989230918,
+      "size_score": 0.6,
+      "composite_weight": 0.008953466849270262
+    },
+    "Shell Companies": {
+      "sector": "Financial Services",
+      "stock_count": 32,
+      "size_category": "Medium",
+      "market_weight": 0.006645898234683281,
+      "log_weight": 0.00833111716345241,
+      "sqrt_weight": 0.008159644989230918,
+      "size_score": 0.6,
+      "composite_weight": 0.008953466849270262
+    },
+    "Advertising Agencies": {
+      "sector": "Communication Services",
+      "stock_count": 31,
+      "size_category": "Medium",
+      "market_weight": 0.006438213914849429,
+      "log_weight": 0.00825779763270357,
+      "sqrt_weight": 0.008031138611793158,
+      "size_score": 0.6,
+      "composite_weight": 0.008948386114881569
+    },
+    "Building Products & Equipment": {
+      "sector": "Industrials",
+      "stock_count": 30,
+      "size_category": "Medium",
+      "market_weight": 0.006230529595015576,
+      "log_weight": 0.008182150112772301,
+      "sqrt_weight": 0.007900542288564035,
+      "size_score": 0.6,
+      "composite_weight": 0.008943271608889648
+    },
+    "Apparel Retail": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 30,
+      "size_category": "Medium",
+      "market_weight": 0.006230529595015576,
+      "log_weight": 0.008182150112772301,
+      "sqrt_weight": 0.007900542288564035,
+      "size_score": 0.6,
+      "composite_weight": 0.008943271608889648
+    },
+    "Internet Retail": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 30,
+      "size_category": "Medium",
+      "market_weight": 0.006230529595015576,
+      "log_weight": 0.008182150112772301,
+      "sqrt_weight": 0.007900542288564035,
+      "size_score": 0.6,
+      "composite_weight": 0.008943271608889648
+    },
+    "Semiconductor Equipment & Materials": {
+      "sector": "Technology",
+      "stock_count": 29,
+      "size_category": "Medium",
+      "market_weight": 0.0060228452751817235,
+      "log_weight": 0.008104021908870288,
+      "sqrt_weight": 0.007767750607797753,
+      "size_score": 0.6,
+      "composite_weight": 0.008938121116186352
+    },
+    "Scientific & Technical Instruments": {
+      "sector": "Technology",
+      "stock_count": 29,
+      "size_category": "Medium",
+      "market_weight": 0.0060228452751817235,
+      "log_weight": 0.008104021908870288,
+      "sqrt_weight": 0.007767750607797753,
+      "size_score": 0.6,
+      "composite_weight": 0.008938121116186352
+    },
+    "Education & Training Services": {
+      "sector": "Consumer Defensive",
+      "stock_count": 29,
+      "size_category": "Medium",
+      "market_weight": 0.0060228452751817235,
+      "log_weight": 0.008104021908870288,
+      "sqrt_weight": 0.007767750607797753,
+      "size_score": 0.6,
+      "composite_weight": 0.008938121116186352
+    },
+    "Computer Hardware": {
+      "sector": "Technology",
+      "stock_count": 27,
+      "size_category": "Medium",
+      "market_weight": 0.005607476635514018,
+      "log_weight": 0.007939632818986629,
+      "sqrt_weight": 0.007495112514702484,
+      "size_score": 0.6,
+      "composite_weight": 0.008927702151832766
+    },
+    "Specialty Business Services": {
+      "sector": "Industrials",
+      "stock_count": 27,
+      "size_category": "Medium",
+      "market_weight": 0.005607476635514018,
+      "log_weight": 0.007939632818986629,
+      "sqrt_weight": 0.007495112514702484,
+      "size_score": 0.6,
+      "composite_weight": 0.008927702151832766
+    },
+    "Furnishings, Fixtures & Appliances": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 27,
+      "size_category": "Medium",
+      "market_weight": 0.005607476635514018,
+      "log_weight": 0.007939632818986629,
+      "sqrt_weight": 0.007495112514702484,
+      "size_score": 0.6,
+      "composite_weight": 0.008927702151832766
+    },
+    "Gold": {
+      "sector": "Basic Materials",
+      "stock_count": 27,
+      "size_category": "Medium",
+      "market_weight": 0.005607476635514018,
+      "log_weight": 0.007939632818986629,
+      "sqrt_weight": 0.007495112514702484,
+      "size_score": 0.6,
+      "composite_weight": 0.008927702151832766
+    },
+    "Farm & Heavy Construction Machinery": {
+      "sector": "Industrials",
+      "stock_count": 25,
+      "size_category": "Medium",
+      "market_weight": 0.005192107995846314,
+      "log_weight": 0.0077630559954262705,
+      "sqrt_weight": 0.00721217537995002,
+      "size_score": 0.6,
+      "composite_weight": 0.008917106382832031
+    },
+    "REIT - Office": {
+      "sector": "Real Estate",
+      "stock_count": 24,
+      "size_category": "Medium",
+      "market_weight": 0.004984423676012461,
+      "log_weight": 0.007669604930107508,
+      "sqrt_weight": 0.007066459846536377,
+      "size_score": 0.6,
+      "composite_weight": 0.008911733604905088
+    },
+    "Household & Personal Products": {
+      "sector": "Consumer Defensive",
+      "stock_count": 24,
+      "size_category": "Medium",
+      "market_weight": 0.004984423676012461,
+      "log_weight": 0.007669604930107508,
+      "sqrt_weight": 0.007066459846536377,
+      "size_score": 0.6,
+      "composite_weight": 0.008911733604905088
+    },
+    "Packaging & Containers": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 24,
+      "size_category": "Medium",
+      "market_weight": 0.004984423676012461,
+      "log_weight": 0.007669604930107508,
+      "sqrt_weight": 0.007066459846536377,
+      "size_score": 0.6,
+      "composite_weight": 0.008911733604905088
+    },
+    "Marine Shipping": {
+      "sector": "Industrials",
+      "stock_count": 23,
+      "size_category": "Medium",
+      "market_weight": 0.004776739356178609,
+      "log_weight": 0.007572338496897962,
+      "sqrt_weight": 0.006917675607764838,
+      "size_score": 0.6,
+      "composite_weight": 0.008906305478314353
+    },
+    "Auto & Truck Dealerships": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 23,
+      "size_category": "Medium",
+      "market_weight": 0.004776739356178609,
+      "log_weight": 0.007572338496897962,
+      "sqrt_weight": 0.006917675607764838,
+      "size_score": 0.6,
+      "composite_weight": 0.008906305478314353
+    },
+    "Farm Products": {
+      "sector": "Consumer Defensive",
+      "stock_count": 22,
+      "size_category": "Medium",
+      "market_weight": 0.004569055036344756,
+      "log_weight": 0.007470931842423107,
+      "sqrt_weight": 0.006765620212945621,
+      "size_score": 0.6,
+      "composite_weight": 0.008900817290486694
+    },
+    "Leisure": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 22,
+      "size_category": "Medium",
+      "market_weight": 0.004569055036344756,
+      "log_weight": 0.007470931842423107,
+      "sqrt_weight": 0.006765620212945621,
+      "size_score": 0.6,
+      "composite_weight": 0.008900817290486694
+    },
+    "Residential Construction": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 22,
+      "size_category": "Medium",
+      "market_weight": 0.004569055036344756,
+      "log_weight": 0.007470931842423107,
+      "sqrt_weight": 0.006765620212945621,
+      "size_score": 0.6,
+      "composite_weight": 0.008900817290486694
+    },
+    "Rental & Leasing Services": {
+      "sector": "Industrials",
+      "stock_count": 21,
+      "size_category": "Medium",
+      "market_weight": 0.004361370716510903,
+      "log_weight": 0.007365016772717305,
+      "sqrt_weight": 0.006610067920783572,
+      "size_score": 0.6,
+      "composite_weight": 0.008895263700117
+    },
+    "Other Industrial Metals & Mining": {
+      "sector": "Basic Materials",
+      "stock_count": 21,
+      "size_category": "Medium",
+      "market_weight": 0.004361370716510903,
+      "log_weight": 0.007365016772717305,
+      "sqrt_weight": 0.006610067920783572,
+      "size_score": 0.6,
+      "composite_weight": 0.008895263700117
+    },
+    "Conglomerates": {
+      "sector": "Industrials",
+      "stock_count": 20,
+      "size_category": "Medium",
+      "market_weight": 0.004153686396677051,
+      "log_weight": 0.00725417368318102,
+      "sqrt_weight": 0.006450765766087448,
+      "size_score": 0.6,
+      "composite_weight": 0.008889638620097926
+    },
+    "Apparel Manufacturing": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 20,
+      "size_category": "Medium",
+      "market_weight": 0.004153686396677051,
+      "log_weight": 0.00725417368318102,
+      "sqrt_weight": 0.006450765766087448,
+      "size_score": 0.6,
+      "composite_weight": 0.008889638620097926
+    },
+    "Utilities - Renewable": {
+      "sector": "Utilities",
+      "stock_count": 19,
+      "size_category": "Small",
+      "market_weight": 0.003946002076843198,
+      "log_weight": 0.0071379215181351825,
+      "sqrt_weight": 0.00628742872885884,
+      "size_score": 0.4,
+      "composite_weight": 0.005982581106681714
+    },
+    "REIT - Hotel & Motel": {
+      "sector": "Real Estate",
+      "stock_count": 19,
+      "size_category": "Small",
+      "market_weight": 0.003946002076843198,
+      "log_weight": 0.0071379215181351825,
+      "sqrt_weight": 0.00628742872885884,
+      "size_score": 0.4,
+      "composite_weight": 0.005982581106681714
+    },
+    "REIT - Specialty": {
+      "sector": "Real Estate",
+      "stock_count": 19,
+      "size_category": "Small",
+      "market_weight": 0.003946002076843198,
+      "log_weight": 0.0071379215181351825,
+      "sqrt_weight": 0.00628742872885884,
+      "size_score": 0.4,
+      "composite_weight": 0.005982581106681714
+    },
+    "REIT - Residential": {
+      "sector": "Real Estate",
+      "stock_count": 19,
+      "size_category": "Small",
+      "market_weight": 0.003946002076843198,
+      "log_weight": 0.0071379215181351825,
+      "sqrt_weight": 0.00628742872885884,
+      "size_score": 0.4,
+      "composite_weight": 0.005982581106681714
+    },
+    "Drug Manufacturers - General": {
+      "sector": "Healthcare",
+      "stock_count": 19,
+      "size_category": "Small",
+      "market_weight": 0.003946002076843198,
+      "log_weight": 0.0071379215181351825,
+      "sqrt_weight": 0.00628742872885884,
+      "size_score": 0.4,
+      "composite_weight": 0.005982581106681714
+    },
+    "Auto Manufacturers": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 19,
+      "size_category": "Small",
+      "market_weight": 0.003946002076843198,
+      "log_weight": 0.0071379215181351825,
+      "sqrt_weight": 0.00628742872885884,
+      "size_score": 0.4,
+      "composite_weight": 0.005982581106681714
+    },
+    "Steel": {
+      "sector": "Basic Materials",
+      "stock_count": 19,
+      "size_category": "Small",
+      "market_weight": 0.003946002076843198,
+      "log_weight": 0.0071379215181351825,
+      "sqrt_weight": 0.00628742872885884,
+      "size_score": 0.4,
+      "composite_weight": 0.005982581106681714
+    },
+    "REIT - Diversified": {
+      "sector": "Real Estate",
+      "stock_count": 18,
+      "size_category": "Small",
+      "market_weight": 0.003738317757009346,
+      "log_weight": 0.007015705152882161,
+      "sqrt_weight": 0.006119733741923188,
+      "size_score": 0.4,
+      "composite_weight": 0.0059767910371696506
+    },
+    "Security & Protection Services": {
+      "sector": "Industrials",
+      "stock_count": 18,
+      "size_category": "Small",
+      "market_weight": 0.003738317757009346,
+      "log_weight": 0.007015705152882161,
+      "sqrt_weight": 0.006119733741923188,
+      "size_score": 0.4,
+      "composite_weight": 0.0059767910371696506
+    },
+    "Banks - Diversified": {
+      "sector": "Financial Services",
+      "stock_count": 18,
+      "size_category": "Small",
+      "market_weight": 0.003738317757009346,
+      "log_weight": 0.007015705152882161,
+      "sqrt_weight": 0.006119733741923188,
+      "size_score": 0.4,
+      "composite_weight": 0.0059767910371696506
+    },
+    "Insurance - Specialty": {
+      "sector": "Financial Services",
+      "stock_count": 18,
+      "size_category": "Small",
+      "market_weight": 0.003738317757009346,
+      "log_weight": 0.007015705152882161,
+      "sqrt_weight": 0.006119733741923188,
+      "size_score": 0.4,
+      "composite_weight": 0.0059767910371696506
+    },
+    "Resorts & Casinos": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 18,
+      "size_category": "Small",
+      "market_weight": 0.003738317757009346,
+      "log_weight": 0.007015705152882161,
+      "sqrt_weight": 0.006119733741923188,
+      "size_score": 0.4,
+      "composite_weight": 0.0059767910371696506
+    },
+    "Solar": {
+      "sector": "Technology",
+      "stock_count": 17,
+      "size_category": "Small",
+      "market_weight": 0.0035306334371754933,
+      "log_weight": 0.006886879361092352,
+      "sqrt_weight": 0.005947312176402623,
+      "size_score": 0.4,
+      "composite_weight": 0.005970905086228139
+    },
+    "REIT - Industrial": {
+      "sector": "Real Estate",
+      "stock_count": 17,
+      "size_category": "Small",
+      "market_weight": 0.0035306334371754933,
+      "log_weight": 0.006886879361092352,
+      "sqrt_weight": 0.005947312176402623,
+      "size_score": 0.4,
+      "composite_weight": 0.005970905086228139
+    },
+    "Trucking": {
+      "sector": "Industrials",
+      "stock_count": 17,
+      "size_category": "Small",
+      "market_weight": 0.0035306334371754933,
+      "log_weight": 0.006886879361092352,
+      "sqrt_weight": 0.005947312176402623,
+      "size_score": 0.4,
+      "composite_weight": 0.005970905086228139
+    },
+    "Industrial Distribution": {
+      "sector": "Industrials",
+      "stock_count": 17,
+      "size_category": "Small",
+      "market_weight": 0.0035306334371754933,
+      "log_weight": 0.006886879361092352,
+      "sqrt_weight": 0.005947312176402623,
+      "size_score": 0.4,
+      "composite_weight": 0.005970905086228139
+    },
+    "Broadcasting": {
+      "sector": "Communication Services",
+      "stock_count": 17,
+      "size_category": "Small",
+      "market_weight": 0.0035306334371754933,
+      "log_weight": 0.006886879361092352,
+      "sqrt_weight": 0.005947312176402623,
+      "size_score": 0.4,
+      "composite_weight": 0.005970905086228139
+    },
+    "Chemicals": {
+      "sector": "Basic Materials",
+      "stock_count": 17,
+      "size_category": "Small",
+      "market_weight": 0.0035306334371754933,
+      "log_weight": 0.006886879361092352,
+      "sqrt_weight": 0.005947312176402623,
+      "size_score": 0.4,
+      "composite_weight": 0.005970905086228139
+    },
+    "REIT - Healthcare Facilities": {
+      "sector": "Real Estate",
+      "stock_count": 16,
+      "size_category": "Small",
+      "market_weight": 0.0033229491173416407,
+      "log_weight": 0.006750688194848173,
+      "sqrt_weight": 0.005769740303960016,
+      "size_score": 0.4,
+      "composite_weight": 0.005964912287494735
+    },
+    "Integrated Freight & Logistics": {
+      "sector": "Industrials",
+      "stock_count": 16,
+      "size_category": "Small",
+      "market_weight": 0.0033229491173416407,
+      "log_weight": 0.006750688194848173,
+      "sqrt_weight": 0.005769740303960016,
+      "size_score": 0.4,
+      "composite_weight": 0.005964912287494735
+    },
+    "Insurance Brokers": {
+      "sector": "Financial Services",
+      "stock_count": 16,
+      "size_category": "Small",
+      "market_weight": 0.0033229491173416407,
+      "log_weight": 0.006750688194848173,
+      "sqrt_weight": 0.005769740303960016,
+      "size_score": 0.4,
+      "composite_weight": 0.005964912287494735
+    },
+    "Oil & Gas Refining & Marketing": {
+      "sector": "Energy",
+      "stock_count": 16,
+      "size_category": "Small",
+      "market_weight": 0.0033229491173416407,
+      "log_weight": 0.006750688194848173,
+      "sqrt_weight": 0.005769740303960016,
+      "size_score": 0.4,
+      "composite_weight": 0.005964912287494735
+    },
+    "Beverages - Non-Alcoholic": {
+      "sector": "Consumer Defensive",
+      "stock_count": 16,
+      "size_category": "Small",
+      "market_weight": 0.0033229491173416407,
+      "log_weight": 0.006750688194848173,
+      "sqrt_weight": 0.005769740303960016,
+      "size_score": 0.4,
+      "composite_weight": 0.005964912287494735
+    },
+    "Travel Services": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 16,
+      "size_category": "Small",
+      "market_weight": 0.0033229491173416407,
+      "log_weight": 0.006750688194848173,
+      "sqrt_weight": 0.005769740303960016,
+      "size_score": 0.4,
+      "composite_weight": 0.005964912287494735
+    },
+    "Utilities - Regulated Gas": {
+      "sector": "Utilities",
+      "stock_count": 15,
+      "size_category": "Small",
+      "market_weight": 0.003115264797507788,
+      "log_weight": 0.006606238106162857,
+      "sqrt_weight": 0.005586527027294715,
+      "size_score": 0.4,
+      "composite_weight": 0.005958799678474467
+    },
+    "Airlines": {
+      "sector": "Industrials",
+      "stock_count": 15,
+      "size_category": "Small",
+      "market_weight": 0.003115264797507788,
+      "log_weight": 0.006606238106162857,
+      "sqrt_weight": 0.005586527027294715,
+      "size_score": 0.4,
+      "composite_weight": 0.005958799678474467
+    },
+    "Metal Fabrication": {
+      "sector": "Industrials",
+      "stock_count": 15,
+      "size_category": "Small",
+      "market_weight": 0.003115264797507788,
+      "log_weight": 0.006606238106162857,
+      "sqrt_weight": 0.005586527027294715,
+      "size_score": 0.4,
+      "composite_weight": 0.005958799678474467
+    },
+    "Staffing & Employment Services": {
+      "sector": "Industrials",
+      "stock_count": 15,
+      "size_category": "Small",
+      "market_weight": 0.003115264797507788,
+      "log_weight": 0.006606238106162857,
+      "sqrt_weight": 0.005586527027294715,
+      "size_score": 0.4,
+      "composite_weight": 0.005958799678474467
+    },
+    "Insurance - Life": {
+      "sector": "Financial Services",
+      "stock_count": 15,
+      "size_category": "Small",
+      "market_weight": 0.003115264797507788,
+      "log_weight": 0.006606238106162857,
+      "sqrt_weight": 0.005586527027294715,
+      "size_score": 0.4,
+      "composite_weight": 0.005958799678474467
+    },
+    "Oil & Gas Integrated": {
+      "sector": "Energy",
+      "stock_count": 15,
+      "size_category": "Small",
+      "market_weight": 0.003115264797507788,
+      "log_weight": 0.006606238106162857,
+      "sqrt_weight": 0.005586527027294715,
+      "size_score": 0.4,
+      "composite_weight": 0.005958799678474467
+    },
+    "Gambling": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 15,
+      "size_category": "Small",
+      "market_weight": 0.003115264797507788,
+      "log_weight": 0.006606238106162857,
+      "sqrt_weight": 0.005586527027294715,
+      "size_score": 0.4,
+      "composite_weight": 0.005958799678474467
+    },
+    "Electronic Gaming & Multimedia": {
+      "sector": "Communication Services",
+      "stock_count": 15,
+      "size_category": "Small",
+      "market_weight": 0.003115264797507788,
+      "log_weight": 0.006606238106162857,
+      "sqrt_weight": 0.005586527027294715,
+      "size_score": 0.4,
+      "composite_weight": 0.005958799678474467
+    },
+    "Building Materials": {
+      "sector": "Basic Materials",
+      "stock_count": 15,
+      "size_category": "Small",
+      "market_weight": 0.003115264797507788,
+      "log_weight": 0.006606238106162857,
+      "sqrt_weight": 0.005586527027294715,
+      "size_score": 0.4,
+      "composite_weight": 0.005958799678474467
+    },
+    "Utilities - Regulated Water": {
+      "sector": "Utilities",
+      "stock_count": 14,
+      "size_category": "Small",
+      "market_weight": 0.0029075804776739354,
+      "log_weight": 0.006452462382329573,
+      "sqrt_weight": 0.00539709785701983,
+      "size_score": 0.4,
+      "composite_weight": 0.005952551784611627
+    },
+    "Pollution & Treatment Controls": {
+      "sector": "Industrials",
+      "stock_count": 14,
+      "size_category": "Small",
+      "market_weight": 0.0029075804776739354,
+      "log_weight": 0.006452462382329573,
+      "sqrt_weight": 0.00539709785701983,
+      "size_score": 0.4,
+      "composite_weight": 0.005952551784611627
+    },
+    "Waste Management": {
+      "sector": "Industrials",
+      "stock_count": 14,
+      "size_category": "Small",
+      "market_weight": 0.0029075804776739354,
+      "log_weight": 0.006452462382329573,
+      "sqrt_weight": 0.00539709785701983,
+      "size_score": 0.4,
+      "composite_weight": 0.005952551784611627
+    },
+    "Recreational Vehicles": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 14,
+      "size_category": "Small",
+      "market_weight": 0.0029075804776739354,
+      "log_weight": 0.006452462382329573,
+      "sqrt_weight": 0.00539709785701983,
+      "size_score": 0.4,
+      "composite_weight": 0.005952551784611627
+    },
+    "Food Distribution": {
+      "sector": "Consumer Defensive",
+      "stock_count": 13,
+      "size_category": "Small",
+      "market_weight": 0.0026998961578400833,
+      "log_weight": 0.006288073292445914,
+      "sqrt_weight": 0.005200773628009755,
+      "size_score": 0.4,
+      "composite_weight": 0.005946149925090416
+    },
+    "Footwear & Accessories": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 13,
+      "size_category": "Small",
+      "market_weight": 0.0026998961578400833,
+      "log_weight": 0.006288073292445914,
+      "sqrt_weight": 0.005200773628009755,
+      "size_score": 0.4,
+      "composite_weight": 0.005946149925090416
+    },
+    "Financial Data & Stock Exchanges": {
+      "sector": "Financial Services",
+      "stock_count": 12,
+      "size_category": "Small",
+      "market_weight": 0.0024922118380062306,
+      "log_weight": 0.0061114964688855555,
+      "sqrt_weight": 0.004996741676468322,
+      "size_score": 0.4,
+      "composite_weight": 0.005939571260922058
+    },
+    "Agricultural Inputs": {
+      "sector": "Basic Materials",
+      "stock_count": 12,
+      "size_category": "Small",
+      "market_weight": 0.0024922118380062306,
+      "log_weight": 0.0061114964688855555,
+      "sqrt_weight": 0.004996741676468322,
+      "size_score": 0.4,
+      "composite_weight": 0.005939571260922058
+    },
+    "Railroads": {
+      "sector": "Industrials",
+      "stock_count": 11,
+      "size_category": "Small",
+      "market_weight": 0.002284527518172378,
+      "log_weight": 0.0059207789703572475,
+      "sqrt_weight": 0.004784015931506622,
+      "size_score": 0.4,
+      "composite_weight": 0.005932787461236756
+    },
+    "Healthcare Plans": {
+      "sector": "Healthcare",
+      "stock_count": 11,
+      "size_category": "Small",
+      "market_weight": 0.002284527518172378,
+      "log_weight": 0.0059207789703572475,
+      "sqrt_weight": 0.004784015931506622,
+      "size_score": 0.4,
+      "composite_weight": 0.005932787461236756
+    },
+    "Oil & Gas Drilling": {
+      "sector": "Energy",
+      "stock_count": 11,
+      "size_category": "Small",
+      "market_weight": 0.002284527518172378,
+      "log_weight": 0.0059207789703572475,
+      "sqrt_weight": 0.004784015931506622,
+      "size_score": 0.4,
+      "composite_weight": 0.005932787461236756
+    },
+    "Utilities - Diversified": {
+      "sector": "Utilities",
+      "stock_count": 10,
+      "size_category": "Small",
+      "market_weight": 0.0020768431983385254,
+      "log_weight": 0.005713457246176591,
+      "sqrt_weight": 0.004561380217046469,
+      "size_score": 0.4,
+      "composite_weight": 0.0059257627878717785
+    },
+    "Tools & Accessories": {
+      "sector": "Industrials",
+      "stock_count": 10,
+      "size_category": "Small",
+      "market_weight": 0.0020768431983385254,
+      "log_weight": 0.005713457246176591,
+      "sqrt_weight": 0.004561380217046469,
+      "size_score": 0.4,
+      "composite_weight": 0.0059257627878717785
+    },
+    "Consulting Services": {
+      "sector": "Industrials",
+      "stock_count": 10,
+      "size_category": "Small",
+      "market_weight": 0.0020768431983385254,
+      "log_weight": 0.005713457246176591,
+      "sqrt_weight": 0.004561380217046469,
+      "size_score": 0.4,
+      "composite_weight": 0.0059257627878717785
+    },
+    "Medical Distribution": {
+      "sector": "Healthcare",
+      "stock_count": 10,
+      "size_category": "Small",
+      "market_weight": 0.0020768431983385254,
+      "log_weight": 0.005713457246176591,
+      "sqrt_weight": 0.004561380217046469,
+      "size_score": 0.4,
+      "composite_weight": 0.0059257627878717785
+    },
+    "Insurance - Diversified": {
+      "sector": "Financial Services",
+      "stock_count": 10,
+      "size_category": "Small",
+      "market_weight": 0.0020768431983385254,
+      "log_weight": 0.005713457246176591,
+      "sqrt_weight": 0.004561380217046469,
+      "size_score": 0.4,
+      "composite_weight": 0.0059257627878717785
+    },
+    "Grocery Stores": {
+      "sector": "Consumer Defensive",
+      "stock_count": 10,
+      "size_category": "Small",
+      "market_weight": 0.0020768431983385254,
+      "log_weight": 0.005713457246176591,
+      "sqrt_weight": 0.004561380217046469,
+      "size_score": 0.4,
+      "composite_weight": 0.0059257627878717785
+    },
+    "Lodging": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 10,
+      "size_category": "Small",
+      "market_weight": 0.0020768431983385254,
+      "log_weight": 0.005713457246176591,
+      "sqrt_weight": 0.004561380217046469,
+      "size_score": 0.4,
+      "composite_weight": 0.0059257627878717785
+    },
+    "Consumer Electronics": {
+      "sector": "Technology",
+      "stock_count": 9,
+      "size_category": "Very Small",
+      "market_weight": 0.001869158878504673,
+      "log_weight": 0.005486361991594469,
+      "sqrt_weight": 0.004327305227970012,
+      "size_score": 0.2,
+      "composite_weight": 0.003017097299268869
+    },
+    "Airports & Air Services": {
+      "sector": "Industrials",
+      "stock_count": 9,
+      "size_category": "Very Small",
+      "market_weight": 0.001869158878504673,
+      "log_weight": 0.005486361991594469,
+      "sqrt_weight": 0.004327305227970012,
+      "size_score": 0.2,
+      "composite_weight": 0.003017097299268869
+    },
+    "Luxury Goods": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 9,
+      "size_category": "Very Small",
+      "market_weight": 0.001869158878504673,
+      "log_weight": 0.005486361991594469,
+      "sqrt_weight": 0.004327305227970012,
+      "size_score": 0.2,
+      "composite_weight": 0.003017097299268869
+    },
+    "Personal Services": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 9,
+      "size_category": "Very Small",
+      "market_weight": 0.001869158878504673,
+      "log_weight": 0.005486361991594469,
+      "sqrt_weight": 0.004327305227970012,
+      "size_score": 0.2,
+      "composite_weight": 0.003017097299268869
+    },
+    "Electronics & Computer Distribution": {
+      "sector": "Technology",
+      "stock_count": 8,
+      "size_category": "Very Small",
+      "market_weight": 0.0016614745586708203,
+      "log_weight": 0.005235319834551638,
+      "sqrt_weight": 0.004079822494615459,
+      "size_score": 0.2,
+      "composite_weight": 0.00300943838364767
+    },
+    "Insurance - Reinsurance": {
+      "sector": "Financial Services",
+      "stock_count": 8,
+      "size_category": "Very Small",
+      "market_weight": 0.0016614745586708203,
+      "log_weight": 0.005235319834551638,
+      "sqrt_weight": 0.004079822494615459,
+      "size_score": 0.2,
+      "composite_weight": 0.00300943838364767
+    },
+    "Mortgage Finance": {
+      "sector": "Financial Services",
+      "stock_count": 8,
+      "size_category": "Very Small",
+      "market_weight": 0.0016614745586708203,
+      "log_weight": 0.005235319834551638,
+      "sqrt_weight": 0.004079822494615459,
+      "size_score": 0.2,
+      "composite_weight": 0.00300943838364767
+    },
+    "Discount Stores": {
+      "sector": "Consumer Defensive",
+      "stock_count": 8,
+      "size_category": "Very Small",
+      "market_weight": 0.0016614745586708203,
+      "log_weight": 0.005235319834551638,
+      "sqrt_weight": 0.004079822494615459,
+      "size_score": 0.2,
+      "composite_weight": 0.00300943838364767
+    },
+    "Tobacco": {
+      "sector": "Consumer Defensive",
+      "stock_count": 8,
+      "size_category": "Very Small",
+      "market_weight": 0.0016614745586708203,
+      "log_weight": 0.005235319834551638,
+      "sqrt_weight": 0.004079822494615459,
+      "size_score": 0.2,
+      "composite_weight": 0.00300943838364767
+    },
+    "Beverages - Brewers": {
+      "sector": "Consumer Defensive",
+      "stock_count": 8,
+      "size_category": "Very Small",
+      "market_weight": 0.0016614745586708203,
+      "log_weight": 0.005235319834551638,
+      "sqrt_weight": 0.004079822494615459,
+      "size_score": 0.2,
+      "composite_weight": 0.00300943838364767
+    },
+    "Home Improvement Retail": {
+      "sector": "Consumer Cyclical",
+      "stock_count": 8,
+      "size_category": "Very Small",
+      "market_weight": 0.0016614745586708203,
+      "log_weight": 0.005235319834551638,
+      "sqrt_weight": 0.004079822494615459,
+      "size_score": 0.2,
+      "composite_weight": 0.00300943838364767
+    },
+    "Other Precious Metals & Mining": {
+      "sector": "Basic Materials",
+      "stock_count": 8,
+      "size_category": "Very Small",
+      "market_weight": 0.0016614745586708203,
+      "log_weight": 0.005235319834551638,
+      "sqrt_weight": 0.004079822494615459,
+      "size_score": 0.2,
+      "composite_weight": 0.00300943838364767
+    },
+    "Publishing": {
+      "sector": "Communication Services",
+      "stock_count": 7,
+      "size_category": "Very Small",
+      "market_weight": 0.0014537902388369677,
+      "log_weight": 0.004954678579622142,
+      "sqrt_weight": 0.0038163244934261054,
+      "size_score": 0.2,
+      "composite_weight": 0.0030013500807263747
+    },
+    "Coking Coal": {
+      "sector": "Basic Materials",
+      "stock_count": 7,
+      "size_category": "Very Small",
+      "market_weight": 0.0014537902388369677,
+      "log_weight": 0.004954678579622142,
+      "sqrt_weight": 0.0038163244934261054,
+      "size_score": 0.2,
+      "composite_weight": 0.0030013500807263747
+    },
+    "Real Estate - Development": {
+      "sector": "Real Estate",
+      "stock_count": 6,
+      "size_category": "Very Small",
+      "market_weight": 0.0012461059190031153,
+      "log_weight": 0.0046365137659052,
+      "sqrt_weight": 0.0035332299232681886,
+      "size_score": 0.2,
+      "composite_weight": 0.0029927174321747003
+    },
+    "Financial Conglomerates": {
+      "sector": "Financial Services",
+      "stock_count": 6,
+      "size_category": "Very Small",
+      "market_weight": 0.0012461059190031153,
+      "log_weight": 0.0046365137659052,
+      "sqrt_weight": 0.0035332299232681886,
+      "size_score": 0.2,
+      "composite_weight": 0.0029927174321747003
+    },
+    "Thermal Coal": {
+      "sector": "Energy",
+      "stock_count": 6,
+      "size_category": "Very Small",
+      "market_weight": 0.0012461059190031153,
+      "log_weight": 0.0046365137659052,
+      "sqrt_weight": 0.0035332299232681886,
+      "size_score": 0.2,
+      "composite_weight": 0.0029927174321747003
+    },
+    "Beverages - Wineries & Distilleries": {
+      "sector": "Consumer Defensive",
+      "stock_count": 6,
+      "size_category": "Very Small",
+      "market_weight": 0.0012461059190031153,
+      "log_weight": 0.0046365137659052,
+      "sqrt_weight": 0.0035332299232681886,
+      "size_score": 0.2,
+      "composite_weight": 0.0029927174321747003
+    },
+    "Pharmaceutical Retailers": {
+      "sector": "Healthcare",
+      "stock_count": 5,
+      "size_category": "Very Small",
+      "market_weight": 0.0010384215991692627,
+      "log_weight": 0.004269219443816533,
+      "sqrt_weight": 0.003225382883043724,
+      "size_score": 0.2,
+      "composite_weight": 0.002983372073153417
+    }
+  }
+}

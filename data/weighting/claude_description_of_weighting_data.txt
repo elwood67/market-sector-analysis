@@ -1,0 +1,32 @@
+I'll break down what these files contain:
+
+`industry_weights.json`:
+- Contains the complete market structure with detailed weighting calculations
+- Key sections:
+  1. Metadata showing total industries (133), total stocks (4815), and minimum stock threshold (5)
+  2. Size categories breakdown:
+     - Very Large: 6 industries
+     - Large: 11 industries
+     - Medium: 46 industries
+     - Small: 51 industries
+     - Very Small: 19 industries
+  3. Detailed data for each industry including:
+     - Sector
+     - Stock count
+     - Size category
+     - Various weight calculations (market, log, sqrt, composite)
+
+`industry_weights.csv`:
+- A more streamlined, tabular version of the same data with 11 columns:
+  - Sector: The main market sector
+  - Industry: Specific industry name
+  - Stock Count: Number of stocks in that industry
+  - Percentage of Sector: How much of its sector this industry represents
+  - Market Weight: Raw size-based weight
+  - Log Weight: Logarithmic weight (reduces impact of very large industries)
+  - Sqrt Weight: Square root weight (another way to reduce size impact)
+  - Size Category: Classification (Very Small to Very Large)
+  - Size Score: Numerical score based on size
+  - Composite Weight: Final weighted value combining all factors
+
+These files give you different ways to access the same weighting data - JSON for programmatic use and CSV for spreadsheet analysis. The weights are designed to help prevent industries with very few stocks from skewing your analysis while still maintaining the significance of larger industries.
