@@ -180,9 +180,8 @@ class IndustryAnalyzer:
                 )
                 industry_history[industry]['days_tracked'] += 1
                 
-                # Calculate weighted net change
-                weight = self.get_industry_weight(industry)
-                net_change = (daily_changes[industry]['added'] - daily_changes[industry]['removed']) * weight
+                # Calculate net change (unweighted)
+                net_change = daily_changes[industry]['added'] - daily_changes[industry]['removed']
                 industry_history[industry]['daily_changes'].append(net_change)
                 
                 # Improved momentum calculation with gap handling
@@ -194,23 +193,22 @@ class IndustryAnalyzer:
                         for _ in range(days_gap - 1):
                             industry_history[industry]['momentum_scores'].append(0)
                 
-                # Calculate 5-day momentum with weighted average
+                # Calculate 5-day momentum
                 recent_changes = industry_history[industry]['daily_changes'][-5:]
                 if len(recent_changes) > 0:
+                    # Weight more recent changes higher
                     weights = np.exp(np.linspace(0, 1, len(recent_changes)))
-                    momentum = np.average(recent_changes, weights=weights)  # Removed weight multiplication
-                    industry_history[industry]['momentum_scores'].append(momentum)
-                    daily_changes[industry]['momentum'] = momentum
+                    momentum = np.average(recent_changes, weights=weights)
+                    weight = self.get_industry_weight(industry)
+                    weighted_momentum = momentum * weight
+                    industry_history[industry]['momentum_scores'].append(momentum)  # Store unweighted
+                    daily_changes[industry]['momentum'] = weighted_momentum  # Store weighted
+
+                industry_history[industry]['last_momentum_date'] = date
                 
-                # Track weighted trading volume
-                daily_volume = (daily_changes[industry]['added'] + daily_changes[industry]['removed']) * weight
+                # Track trading volume (weighted)
+                daily_volume = (daily_changes[industry]['added'] + daily_changes[industry]['removed'])
                 industry_history[industry]['volume_history'].append(daily_volume)
-            
-            daily_data.append({
-                'date': date_str,
-                'changes': dict(daily_changes),
-                'active_counts': {ind: len(stocks) for ind, stocks in active_stocks.items()}
-            })
         
         # Calculate final metrics with weighting
         metrics = {}
@@ -237,10 +235,13 @@ class IndustryAnalyzer:
         momentum_scores = history['momentum_scores']
         if len(momentum_scores) >= 5:
             weights = np.exp(np.linspace(0, 1, 5))
-            current_momentum = np.average(momentum_scores[-5:], weights=weights)
-            momentum_change = current_momentum - momentum_scores[-5]
+            momentum = np.average(momentum_scores[-5:], weights=weights)
+            momentum_change = momentum - momentum_scores[-5]
+            # Apply weight after calculations
+            current_momentum = momentum * weight
+            momentum_change = momentum_change * weight
         else:
-            current_momentum = momentum_scores[-1] if momentum_scores else 0
+            current_momentum = (momentum_scores[-1] if momentum_scores else 0) * weight
             momentum_change = 0
         
         # Apply size weight after all calculations
